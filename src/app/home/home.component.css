@@ -301,7 +301,6 @@ form {
   text-shadow: rgba(255, 255, 0, 0.041);
   font-family: Kaisei Decol;
   font-size: 15px;
-  margin: 0;
+  margin-left: 15px;
   display: block;
-  
 }
