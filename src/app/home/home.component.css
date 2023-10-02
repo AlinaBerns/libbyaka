@@ -19,24 +19,29 @@ body {
   top: 0;
   left: 0;
   right: 0;
+  display: flex;
 }
 div.container {
   width: 1100px;
   height: 550px;
   position: fixed;
+  overflow: visible;
   margin-top: 100px;
   margin-left: 50px;
   background-color: rgba(0, 0, 0, 0.416);
-  border-radius: 30px;
+  z-index: 10;
   border: 3px solid rgba(128, 128, 128, 0.388);
+  display: flex;
+  flex-direction: column;
 }
 .block {
   background-color: rgba(0, 0, 0, 0.292);
   float: right;
   width: 300px;
   border: 3px solid rgba(128, 128, 128, 0.388);
-  height: 1400px;
+  height: 1350px;
 }
+
 div.scroll {
   width: 100%;
   height: 100%;
@@ -59,6 +64,11 @@ div.fixed-block {
 img {
   padding-left: 30px;
   padding-top: 30px;
+}
+.imgLogo {
+  height: 35px;
+  padding-left: 175px;
+  padding-top: 10px;
 }
 
 #line_block {
@@ -108,17 +118,140 @@ img {
   margin-top: 0px;
   width: 110px;
   height: 35px;
-  background: rgba(0, 58, 13, 0.594);
-  border-radius: 10px;
+  background: rgba(66, 76, 68, 0.594);
+
   color: #ffffffae;
   text-align: center;
   text-shadow: rgba(255, 255, 255, 0.4);
   font-family: Kaisei Decol;
-  font-size: 15px;
+  font-size: 10px;
 }
-.available{
+
+.button2 {
+  margin-top: 8px;
+  width: 200px;
+  height: 35px;
+  background: rgba(0, 0, 0, 0.461);
+  color: #ffffffae;
+  text-align: center;
+  text-shadow: rgba(255, 255, 0, 0.041);
+  font-family: Kaisei Decol;
+  font-size: 15px;
+  margin-left: 50px;
+}
+
+.available {
   color: green;
   text-align: 10;
   text-align: center;
   margin: 0%;
+}
+
+.userPhoto {
+  width: 200px;
+  height: 200px;
+  margin-top: 40px;
+  margin-left: 20px;
+}
+.userText {
+  font-size: 20px;
+  color: white;
+  font-family: Kaisei Decol;
+  text-align: center;
+  font-weight: bold;
+  word-break: break-all;
+}
+table {
+  border-collapse: collapse;
+  border: 1px solid grey;
+  text-align: center;
+  margin-left: 5px;
+  width: 290px;
+  color: rgba(255, 255, 255, 0.795);
+}
+
+th {
+  border: 2px solid grey;
+  background-color: black;
+}
+td {
+  border: 1px solid grey;
+}
+.tableCaption {
+  color: rgba(255, 255, 255, 0.562);
+  font-size: 17px;
+  text-align: center;
+  font-weight: bold;
+  margin-top: 50px;
+}
+tr {
+  border: 1px solid grey;
+  background-color: rgba(0, 0, 0, 0.58);
+  word-break: break-all;
+}
+button:hover {
+  transition: 1s;
+  color: white;
+  background: rgb(3, 3, 3);
+}
+ul > li > a {
+  display: inline-block;
+  color: #ffffffc3;
+  text-align: center;
+  font-family: Kaisei Decol;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+ul > li {
+  display: inline-block;
+
+  margin-right: 130px;
+  margin-left: 125px;
+  margin-top: 1360px;
+}
+ul > li > a:hover {
+  display: inline-block;
+  color: #ffffff;
+  text-align: center;
+  font-family: Kaisei Decol;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.text4 {
+  color: #fefdfd94;
+  font-family: Kaisei HarunoUmi;
+  font-size: 20px;
+  text-align: center;
+}
+.submenu {
+  background: rgba(0, 0, 0, 0.427);
+  border: 3px solid rgba(128, 128, 128, 0.388);
+  order: 1;
+  opacity: 0;
+
+  position: relative;
+  z-index: 100;
+  width: auto;
+  height: 200px;
+  transform: perspective(600px) rotateX(-90deg);
+  transform-origin: 0% 0%;
+  transition: 0.6s ease-in-out;
+}
+.button2:hover .submenu {
+  visibility: visible;
+  opacity: 1;
+  transform: perspective(600px) rotateX(0deg);
+}
+
+.button3 {
+  background-color: rgba(0, 0, 0, 0.091);
+  color: #fefdfd94;
+  font-family: Kaisei HarunoUmi;
+  font-size: 15px;
+  text-align: center;
+  width: 150px;
 }
