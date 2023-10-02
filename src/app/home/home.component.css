@@ -1,0 +1,124 @@
+body {
+  margin: auto;
+  outline: none;
+  background-image: url(/assets/background_img4.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  height: 1405px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+.bar {
+  width: auto;
+  height: 50px;
+  background-color: rgb(0, 0, 0);
+  border: 3px solid rgba(128, 128, 128, 0.306);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+div.container {
+  width: 1100px;
+  height: 550px;
+  position: fixed;
+  margin-top: 100px;
+  margin-left: 50px;
+  background-color: rgba(0, 0, 0, 0.416);
+  border-radius: 30px;
+  border: 3px solid rgba(128, 128, 128, 0.388);
+}
+.block {
+  background-color: rgba(0, 0, 0, 0.292);
+  float: right;
+  width: 300px;
+  border: 3px solid rgba(128, 128, 128, 0.388);
+  height: 1400px;
+}
+div.scroll {
+  width: 100%;
+  height: 100%;
+  border-radius: 30px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow-y: scroll;
+  background-color: rgba(0, 0, 0, 0.183);
+}
+div.fixed-block {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  z-index: 2;
+  top: 20px;
+  right: 20px;
+}
+
+img {
+  padding-left: 30px;
+  padding-top: 30px;
+}
+
+#line_block {
+  display: inline-block;
+  width: 250px;
+  height: 330px;
+  margin: 0 15px 15px 0;
+  text-align: center;
+}
+.hover-image-scale {
+  display: inline-block;
+  overflow: hidden;
+}
+.hover-image-scale img {
+  transition: 1s;
+  display: block;
+}
+.hover-image-scale img:hover {
+  transform: scale(1.2);
+}
+
+.img__description {
+  position: sticky;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin-left: 12px;
+  font-family: Kaisei Decol;
+  font-size: large;
+  background: rgba(0, 0, 0, 0.874);
+  color: #ffe1e1;
+  text-decoration: none;
+  visibility: collapse;
+  opacity: 0;
+  /* transition effect. not necessary */
+  transition: opacity 0.2s, visibility 0.2s;
+}
+.al {
+  text-decoration: none;
+}
+.hover-image-scale:hover .img__description {
+  visibility: visible;
+  opacity: 1;
+}
+.button1 {
+  margin-top: 0px;
+  width: 110px;
+  height: 35px;
+  background: rgba(0, 58, 13, 0.594);
+  border-radius: 10px;
+  color: #ffffffae;
+  text-align: center;
+  text-shadow: rgba(255, 255, 255, 0.4);
+  font-family: Kaisei Decol;
+  font-size: 15px;
+}
+.available{
+  color: green;
+  text-align: 10;
+  text-align: center;
+  margin: 0%;
+}

@@ -3,14 +3,30 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { NavbarComponent } from './navbar/navbar.component';
+import { HomeComponent } from './home/home.component';
+import { LoginComponent } from './login/login.component';
+import { RegistrationComponent } from './registration/registration.component';
+import { StartpageComponent } from './startpage/startpage.component';
+import { FormsModule } from '@angular/forms';
+import { ModalOutletComponent } from './modal-outlet/modal-outlet.component';
+import { PortalDirective } from './portal.directive';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    NavbarComponent,
+    HomeComponent,
+    LoginComponent,
+    RegistrationComponent,
+    StartpageComponent,
+    ModalOutletComponent,
+    PortalDirective
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
