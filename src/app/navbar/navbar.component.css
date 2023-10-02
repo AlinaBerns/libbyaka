@@ -20,7 +20,7 @@ nav {
 /* background: rgba(0, 28, 16, 0.413); */
 
 /* } */
-nav > div > div > button {
+.button0 {
   margin-top: 25px;
   width: 200px;
   height: 35px;
@@ -32,7 +32,7 @@ nav > div > div > button {
   font-size: 15px;
   margin-left: 198px;
 }
-nav > div > div > button:hover {
+.button0:hover {
   transition: 1s;
   color: white;
   background: rgb(3, 3, 3);
