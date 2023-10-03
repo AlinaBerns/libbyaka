@@ -6,7 +6,7 @@ section {
   background-image: url(/assets/background_img4.jpg);
   background-size: cover;
   background-attachment: fixed;
-  height: 1405px;
+  height: 1406px;
   position: absolute;
     top: 0;
     left: 0;
@@ -24,13 +24,14 @@ section > div > div > button {
   margin-top: 25px;
   width: 400px;
   height: 35px;
-  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.662);
   color: #ffffffae;
   text-align: center;
   text-shadow: rgba(255, 255, 0, 0.041);
   font-family: Kaisei Decol;
   font-size: 15px;
   margin-left: 283px;
+  border: 1px solid grey;
 }
 section > div > div > button:hover {
   transition: 1s;
@@ -39,13 +40,11 @@ section > div > div > button:hover {
 }
 .block {
   width: 1514px;
-  height: 1400px;
+  height: 1406px;
   background: rgba(0, 28, 16, 0.443);
   float: right;
-  border-radius: 3px;
-  color: rgba(244, 242, 242, 0.452);
-  border-style: solid;
-  margin-left: 310px;
+  border: 1px solid grey;
+  
 }
 .text1 {
   color: #d7d7d7;
@@ -106,6 +105,7 @@ section > div > div > button:hover {
   font-family: Kaisei HarunoUmi;
   font-size: 20px;
   padding-top: 900px;
+  font-style: italic;
 }
 .text5 {
   color: #fefdfd94;
@@ -151,7 +151,7 @@ ul > li {
   text-align: right;
   margin-right: 190px;
   margin-left: 135px;
-  margin-top: 20px;
+  
 }
 input {
   width: 700px;
@@ -183,9 +183,7 @@ input::-webkit-input-placeholder {
   margin-top: 100px;
   margin-left: 250px;
   transition: 1s;
-  border-radius: 3px;
-  color: rgba(244, 242, 242, 0.452);
-  border-style: solid;
+  border: 1px solid grey;
 }
 
 .loginbox:hover {

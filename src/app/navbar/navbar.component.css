@@ -31,6 +31,7 @@ nav {
   font-family: Kaisei Decol;
   font-size: 15px;
   margin-left: 198px;
+  border: 1px solid grey;
 }
 .button0:hover {
   transition: 1s;
@@ -40,13 +41,13 @@ nav {
 }
 .block {
   width: 818px;
-  height: 1400px;
+  height: 1405px;
   background: rgba(0, 28, 16, 0.443);
   float: right;
   position: relative;
   border-radius: 3px;
-  color: rgba(244, 242, 242, 0.452);
-  border-style: solid;
+  border: 1px solid grey;
+  
 }
 .text1 {
   color: #d7d7d7;
@@ -107,7 +108,8 @@ nav {
   text-align: center;
   font-family: Kaisei HarunoUmi;
   font-size: 20px;
-  padding-top: 120px;
+  padding-top: 70px;
+  font-style: italic;
 }
 .grey-image {
   filter: grayscale(1);
@@ -152,8 +154,8 @@ ul > li {
   display: inline-block;
   text-align: right;
   margin-right: 100px;
-  margin-left: 50px;
-  margin-top: 20px;
+  margin-left: 67px;
+  margin-top: 40px;
 }
 input {
   width: 300px;
@@ -185,14 +187,15 @@ input::-webkit-input-placeholder {
   margin-top: 100px;
   margin-left: 105px;
   transition: 1s;
-  border-radius: 3px;
-  color: rgba(244, 242, 242, 0.452);
-  border-style: solid;
+  border: 1px solid grey;
 }
 
 .loginbox:hover {
   background: rgba(0, 0, 0, 0.626);
 }
+
+
+
 @keyframes ch-color {
   0% {
     text-shadow: 0px 4px 4px rgba(255, 204, 0, 0.418);
