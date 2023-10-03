@@ -114,13 +114,14 @@ div.fixed-block {
   margin-top: 8px;
   width: 200px;
   height: 35px;
-  background: rgba(0, 0, 0, 0.461);
+  background: rgba(0, 0, 0, 0.146);
   color: #ffffffae;
   text-align: center;
   text-shadow: rgba(255, 255, 0, 0.041);
   font-family: Kaisei Decol;
   font-size: 15px;
   margin-left: 20px;
+  border-color: #ffffff53;
 }
 
 .button2 {
