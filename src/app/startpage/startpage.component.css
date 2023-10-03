@@ -1,0 +1,17 @@
+body{
+    margin: 0%;
+    padding: 0%;
+    outline: none;
+    background-image: url(/assets/background_img4.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    height: 1405px;
+    position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+}
+table{
+    background-color: rgba(0, 0, 0, 0.731);
+    
+}
