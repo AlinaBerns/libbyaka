@@ -36,7 +36,7 @@ div.container {
 .block {
   background-color: rgba(0, 0, 0, 0.292);
   float: right;
-  width: 300px;
+  width: 350px;
   border: 3px solid rgba(128, 128, 128, 0.388);
   height: 1300px;
 }
@@ -111,9 +111,9 @@ div.fixed-block {
   opacity: 1;
 }
 .button1 {
-  margin-top: 8px;
+  margin-top: 13px;
   width: 200px;
-  height: 35px;
+  height: 25px;
   background: rgba(0, 0, 0, 0.146);
   color: #ffffffae;
   text-align: center;
@@ -121,7 +121,7 @@ div.fixed-block {
   font-family: Kaisei Decol;
   font-size: 15px;
   margin-left: 20px;
-  border-color: #ffffff53;
+  border: 1px solid grey;
 }
 
 .button2 {
@@ -135,6 +135,7 @@ div.fixed-block {
   font-family: Kaisei Decol;
   font-size: 15px;
   margin-left: 50px;
+  border: 1px solid grey;
 }
 
 .available {
@@ -162,8 +163,8 @@ table {
   border-collapse: collapse;
   border: 1px solid grey;
   text-align: center;
-  margin-left: 5px;
-  width: 290px;
+  margin-top: 40px;
+  width: 340px;
   color: rgba(255, 255, 255, 0.795);
 }
 
@@ -249,7 +250,10 @@ ul > li > a:hover {
   font-size: 15px;
   text-align: center;
   width: 150px;
-  margin-left: 150px;
+  margin-left: 200px;
+  border: 1px solid grey;
+  
+
 }
 .button4 {
   background-color: rgba(0, 0, 0, 0.091);
@@ -259,6 +263,7 @@ ul > li > a:hover {
   text-align: center;
   width: 80px;
   height: 30px;
+  border: 1px solid grey;
 }
 input {
   height: 30px;
@@ -288,6 +293,8 @@ input:-ms-input-placeholder {
 form {
   margin-top: 10px;
   margin-left: 300px;
+  border: 1px solid grey;
+  height: 30px;
 }
 .button5 {
   margin-top: 8px;
@@ -301,4 +308,11 @@ form {
   font-size: 15px;
   margin-left: 15px;
   display: block;
+  border: 1px solid grey;
+}
+.imgBook{
+  margin-top: 30px;
+  margin-left: 30px;
+  width: 200px;
+  height:290px;
 }
