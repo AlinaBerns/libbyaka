@@ -38,7 +38,7 @@ div.container {
   float: right;
   width: 300px;
   border: 3px solid rgba(128, 128, 128, 0.388);
-  height: 1350px;
+  height: 1300px;
 }
 
 div.scroll {
@@ -60,10 +60,7 @@ div.fixed-block {
   right: 20px;
 }
 
-img {
-  padding-left: 30px;
-  padding-top: 30px;
-}
+
 .imgLogo {
   height: 35px;
   padding-left: 175px;
@@ -206,8 +203,8 @@ ul > li > a {
 ul > li {
   display: inline-block;
 
-  margin-right: 130px;
-  margin-left: 125px;
+  margin-right: 120px;
+  margin-left: 120px;
   margin-top: 1360px;
 }
 ul > li > a:hover {

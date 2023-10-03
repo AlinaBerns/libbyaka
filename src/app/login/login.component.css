@@ -1,0 +1,214 @@
+section {
+    border: none;
+    margin: 0%;
+    padding: 0%;
+    outline: none;
+    background-image: url(/assets/background_img4.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    height: 1405px;
+    position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+  }
+  
+  /* .aa { */
+  /* width: auto; */
+  /* height: 60px; */
+  /* flex-shrink: 0; */
+  /* background: rgba(0, 28, 16, 0.413); */
+  
+  /* } */
+  section > div > div > button {
+    margin-top: 25px;
+    width: 400px;
+    height: 35px;
+    background: rgb(0, 0, 0);
+    color: #ffffffae;
+    text-align: center;
+    text-shadow: rgba(255, 255, 0, 0.041);
+    font-family: Kaisei Decol;
+    font-size: 15px;
+    margin-left: 283px;
+  }
+  section > div > div > button:hover {
+    transition: 1s;
+    color: white;
+    background: rgb(3, 3, 3);
+  }
+  .block {
+    width: 1514px;
+    height: 1400px;
+    background: rgba(0, 28, 16, 0.443);
+    float: right;
+    border-radius: 3px;
+    color: rgba(244, 242, 242, 0.452);
+    border-style: solid;
+    margin-left: 310px;
+  }
+  .text1 {
+    color: #d7d7d7;
+    text-align: center;
+    font-family: Kaisei Decol;
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 17px; /* 24.286% */
+    padding-top: 100px;
+    
+    animation: ch-color 3s infinite;
+  }
+  .text2 {
+    flex-shrink: 0;
+    color: #d7d7d7;
+    text-align: center;
+    font-family: Kameron;
+    font-size: 40px;
+    padding-top: 25px;
+    text-shadow: 0px 4px 4px rgba(229, 255, 0, 0.304);
+    padding-left: 0px;
+  }
+  .text0 {
+    flex-shrink: 0;
+    color: #d7d7d7a9;
+    text-align: center;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-family: Kameron;
+    font-size: 20px;
+    padding-top: 50px;
+    
+    text-shadow: 0px 4px 4px rgba(229, 255, 0, 0.361);
+  }
+  .text01 {
+    flex-shrink: 0;
+    color: #d7d7d7bb;
+    text-align: left;
+    text-shadow: 0px 4px 4px rgba(238, 255, 0, 0.25);
+    font-family: Kameron;
+    font-size: 25px;
+    padding-top: 110px;
+    padding-left: 120px;
+  }
+  
+  .text3 {
+    flex-shrink: 0;
+    color: #d7d7d7c5;
+    text-align: center;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-family: Kameron;
+    font-size: 15px;
+    padding-top: 25px;
+  }
+  .text4 {
+    color: #fefdfd94;
+    text-align: center;
+    font-family: Kaisei HarunoUmi;
+    font-size: 20px;
+    padding-top: 900px;
+  }
+  .text5 {
+    color: #fefdfd94;
+    text-align: center;
+    font-family: Kaisei HarunoUmi;
+    font-size: 30px;
+    padding-top: 40px;
+    text-shadow: 0px 4px 4px rgba(255, 191, 0, 0.452);
+  }
+  .text6 {
+    color: #fefdfdf0;
+    text-align: center;
+    font-family: Kaisei HarunoUmi;
+    font-size: 60px;
+    padding-top: 10px;
+    animation: ch-color 3s infinite;
+  }
+  .text7 {
+    color: #fefdfd8f;
+    text-align: center;
+    font-family: Kaisei HarunoUmi;
+    font-size: 40px;
+    padding-top: 10px;
+    text-shadow: 0px 4px 4px rgba(255, 179, 0, 0.452);
+  }
+  
+  .divin {
+    display: inline-block;
+    position: absolute;
+  }
+  ul > li > a {
+    display: inline-block;
+    color: #ffffffc3;
+    text-align: center;
+    font-family: Kaisei Decol;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+  ul > li {
+    display: inline-block;
+    text-align: right;
+    margin-right: 190px;
+    margin-left: 135px;
+    margin-top: 20px;
+  }
+  input {
+    width: 700px;
+    height: 30px;
+    flex-shrink: 0;
+    border-radius: 20px;
+    background: rgba(217, 217, 217, 0.304);
+    margin-top: 30px;
+    margin-left: 130px;
+    color: #f9f7f7c6;
+    text-align: center;
+    font-size: large;
+    font-family: Kaisei Decol;
+  }
+  input::-webkit-input-placeholder {
+    color: rgba(243, 238, 238, 0.66);
+    opacity: 70%;
+    text-align: center;
+    font-size: large;
+    font-family: Kaisei Decol;
+  }
+  
+  .loginbox {
+    width: 1000px;
+    height: 570px;
+    background: rgba(0, 0, 0, 0.454);
+    float: center;
+    position:absolute;
+    margin-top: 100px;
+    margin-left: 250px;
+    transition: 1s;
+    border-radius: 3px;
+    color: rgba(244, 242, 242, 0.452);
+    border-style: solid;
+  }
+  
+  .loginbox:hover {
+    background: rgba(0, 0, 0, 0.568);
+    border-radius: 4px;
+    color: rgba(198, 199, 187, 0.696);
+  }
+  @keyframes ch-color {
+    0% {
+      text-shadow: 0px 4px 4px rgba(255, 204, 0, 0.418);
+    }
+    25% {
+      text-shadow: 0px 4px 4px rgba(255, 216, 45, 0.854);
+    }
+    50% {
+      text-shadow: 0px 4px 4px rgba(255, 213, 0, 0.555);
+    }
+    75% {
+      text-shadow: 0px 4px 4px rgba(255, 225, 103, 0.897);
+    }
+    100% {
+      text-shadow: 0px 4px 4px rgba(255, 200, 0, 0.452);
+   
+      
+    }
+  }
