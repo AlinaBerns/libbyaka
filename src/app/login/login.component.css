@@ -4,7 +4,7 @@ body {
   background-image: url(/assets/background_img4.jpg);
   background-size: cover;
   background-attachment: fixed;
-  height: 1405px;
+  height: 710px;
   position: absolute;
   top: 0;
   left: 0;
@@ -24,31 +24,64 @@ body {
 }
 
 .block {
-  width: 1000px;
-  height: 170px;
-  background-color: rgba(0, 0, 0, 0.342);
-  padding-top: 50px;
-  margin-left: 250px;
+  width: 400px;
+  height: 200px;
+  background-color: rgba(0, 0, 0, 0.537);
+  top: 0;
+  margin-left: 50px;
   border: 3px solid rgba(128, 128, 128, 0.306);
   display: inline-block;
+  position: fixed;
 }
 .block2 {
     width: 1000px;
-    height: 500px;
-    background-color: rgba(0, 0, 0, 0.489);
-    margin-left: 250px;
+    height: 705px;
+    background-color: rgba(0, 0, 0, 0.662);
+    margin-left: 500px;
     border: 3px solid rgba(128, 128, 128, 0.306);
     display: inline-block;
+    position: fixed;
+  }
+  .block3 {
+    width: 400px;
+    height: 450px;
+    background-color: rgba(0, 0, 0, 0);
+    
+    margin-left: 50px;
+    display: inline-block;
+    position: fixed;
+    margin-top: 210px;
+    
   }
 .text1 {
-  margin-top: 20px;
   font-size: 20px;
   color: rgba(255, 255, 255, 0.575);
   font-family: Kaisei Decol;
   text-align: center;
-  margin-right: 600px;
+  margin-top: 20px;
 }
+.text2 {
+    font-size: 25px;
+    color: rgba(255, 255, 255, 0.575);
+    font-family: Kaisei Decol;
+    text-align: center;
+    margin-top: 50px;
+  }
 .button2 {
+    margin-top: 8px;
+    width: 100px;
+    height: 35px;
+    background: rgba(0, 0, 0, 0.461);
+    color: #ffffffae;
+    text-align: center;
+    text-shadow: rgba(255, 255, 0, 0.041);
+    font-family: Kaisei Decol;
+    font-size: 15px;
+    float: right;
+    margin-top: 40px;
+    margin-right: 20px;
+  }
+  .button3 {
     margin-top: 8px;
     width: 200px;
     height: 35px;
@@ -58,6 +91,62 @@ body {
     text-shadow: rgba(255, 255, 0, 0.041);
     font-family: Kaisei Decol;
     font-size: 15px;
-   
+    margin-top: 40px;
+    margin-left: 385px;
+
+  }
+  table {
+    border-collapse: collapse;
+    border: 1px solid grey;
+    text-align: center;
     
+    width: 400px;
+    color: rgba(255, 255, 255, 0.795);
+    
+
+  }
+  input {
+    width: 700px;
+    height: 30px;
+    flex-shrink: 0;
+    border-radius: 20px;
+    background: rgba(217, 217, 217, 0.304);
+    margin-top: 30px;
+    margin-left: 130px;
+    color: #f9f7f7c6;
+    text-align: center;
+    font-size: large;
+    font-family: Kaisei Decol;
+  }
+  input::-webkit-input-placeholder {
+    color: rgba(243, 238, 238, 0.66);
+    opacity: 70%;
+    text-align: center;
+    font-size: large;
+    font-family: Kaisei Decol;
+  }
+  
+  th {
+    border: 2px solid grey;
+    background-color: black;
+  }
+  td {
+    border: 1px solid grey;
+  }
+  .tableCaption {
+    color: rgba(255, 255, 255, 0.562);
+    font-size: 17px;
+    text-align: center;
+    font-weight: bold;
+    margin-top: 50px;
+  }
+  tr {
+    border: 1px solid grey;
+    background-color: rgba(0, 0, 0, 0.58);
+    word-break: break-all;
+  }
+  button:hover {
+    transition: 1s;
+    color: white;
+    background: rgb(3, 3, 3);
   }
