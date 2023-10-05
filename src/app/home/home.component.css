@@ -65,7 +65,7 @@ div.fixed-block {
 }
 div.container2 {
   width: 390px;
-  height: 330px;
+  height: 320px;
   position: fixed;
   background-color: rgba(0, 0, 0, 0.416);
   border: 3px solid rgba(128, 128, 128, 0.388);
@@ -148,7 +148,7 @@ div.container2 {
   text-shadow: rgba(255, 255, 0, 0.041);
   font-family: Kaisei Decol;
   font-size: 15px;
-  margin-left: 85px;
+  margin-left: 95px;
   border: 1px solid grey;
 }
 
@@ -196,7 +196,7 @@ div.container2 {
 table {
   position: fixed;
   text-align: center;
-  width: 390px;
+  width:390px;
   height: 320px;
   margin-top: 360px;
   margin-left: 1130px;
@@ -204,12 +204,20 @@ table {
   
   font-family: Kaisei Decol;
   border-collapse: collapse;
-  outline: 3px solid #151515;
+  
   background: #111111c7 !important;
 
   color: #f8f8f8;
   border-radius: 0%;
   border: 1px solid grey;
+}
+table th{
+  height: 5px;
+  width: 390px;
+}
+table tr{
+  height: 50px;
+  width: 300px;
 }
 table  tr:nth-child(even) {
   background: #2d2d2d82 !important;
