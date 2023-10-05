@@ -8,6 +8,7 @@ import { AdminUsersComponent } from './admin.users/adminusers.component';
 import { AdminBooksComponent } from './admin.books/adminbooks.component';
 
 const routes: Routes = [
+  { path: '', component: LogInComponent },
   { path: 'login', component: LogInComponent },
   {
     path: 'registration',
