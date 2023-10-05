@@ -26,10 +26,10 @@ body {
 }
 div.container {
   width: 1100px;
-  height: 550px;
+  height: 580px;
   position: fixed;
   margin-top: 100px;
-  margin-left: 50px;
+  margin-left: 20px;
   background-color: rgba(0, 0, 0, 0.416);
   border: 3px solid rgba(128, 128, 128, 0.388);
   display: inline-block;
@@ -38,9 +38,11 @@ div.container {
 .block {
   background-color: rgba(0, 0, 0, 0.733);
   float: right;
-  width: 350px;
+  width: 390px;
   border: 3px solid rgba(128, 128, 128, 0.388);
-  height: 1300px;
+  height: 400px;
+  position: fixed;
+  margin-left: 1130px;
 }
 
 div.scroll {
@@ -60,6 +62,16 @@ div.fixed-block {
   z-index: 2;
   top: 20px;
   right: 20px;
+}
+div.container2 {
+  width: 390px;
+  height: 330px;
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.416);
+  border: 3px solid rgba(128, 128, 128, 0.388);
+  
+  border-radius: 0%;
+ 
 }
 
 
@@ -136,7 +148,7 @@ div.fixed-block {
   text-shadow: rgba(255, 255, 0, 0.041);
   font-family: Kaisei Decol;
   font-size: 15px;
-  margin-left: 70px;
+  margin-left: 85px;
   border: 1px solid grey;
 }
 
@@ -168,36 +180,48 @@ div.fixed-block {
   text-align: center;
   font-weight: bold;
   word-break: break-all;
+  
+ 
+}
+.userText2 {
+  font-size: 20px;
+  color: rgba(255, 255, 255, 0.571);
+  font-family: Kaisei Decol;
+  text-align: center;
+  font-weight: bold;
+  word-break: break-all;
+  margin-top: 20px;
  
 }
 table {
-  border-collapse: collapse;
-  
+  position: fixed;
   text-align: center;
-  margin-top: 40px;
-  width: 340px;
-  color: rgba(255, 255, 255, 0.795);
-}
+  width: 390px;
+  height: 320px;
+  margin-top: 360px;
+  margin-left: 1130px;
+  
+  
+  font-family: Kaisei Decol;
+  border-collapse: collapse;
+  outline: 3px solid #151515;
+  background: #111111c7 !important;
 
-th {
-  background-color: black;
-  border: 2px solid rgb(43, 37, 37);
-}
-td {
+  color: #f8f8f8;
+  border-radius: 0%;
   border: 1px solid grey;
 }
-.tableCaption {
-  color: rgba(255, 255, 255, 0.562);
-  font-size: 17px;
-  text-align: center;
-  font-weight: bold;
-  margin-top: 50px;
+table  tr:nth-child(even) {
+  background: #2d2d2d82 !important;
 }
-tr {
-  border: 1px solid rgb(51, 48, 48);
-  background-color: rgba(0, 0, 0, 0.58);
-  word-break: break-all;
+table  tr:nth-child(even):hover {
+  background: #b0b0b089 !important;
 }
+table  tr:hover {
+  background: #b0b0b089 !important;
+}
+
+
 button:hover {
   transition: 1s;
   color: white;
@@ -263,7 +287,7 @@ ul > li > a:hover {
   width: 150px;
   margin-left: 200px;
   border: 1px solid grey;
-  
+  margin-top: 10px;
 
 }
 .button4 {
