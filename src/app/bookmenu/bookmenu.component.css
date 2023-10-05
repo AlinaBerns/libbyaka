@@ -22,6 +22,8 @@ body {
   left: 0;
   right: 0;
   display: flex;
+  opacity: 0;
+  animation: ani 2.5s forwards;
 }
 div.scroll {
   width: 100%;
@@ -39,6 +41,8 @@ div.container {
 
   background-color: rgba(0, 0, 0, 0.416);
   border: 3px solid rgba(128, 128, 128, 0.388);
+  opacity: 0;
+  animation: ani 2.5s forwards;
 }
 div.fixed-block {
   width: 30px;
@@ -59,7 +63,7 @@ div.fixed-block {
   border-collapse: collapse;
   outline: 3px solid #151515;
   background: #111111c7 !important;
-  
+
   color: #f8f8f8;
   border-radius: 0%;
   border: 1px solid grey;
@@ -73,8 +77,6 @@ div.fixed-block {
   font-size: 15px;
   font-family: Kaisei Decol;
   width: 700px;
-  
-  
 }
 .table td {
   padding: 7px;
@@ -84,19 +86,25 @@ div.fixed-block {
   color: #f8f8f8e4;
   width: 500px;
   text-align: left;
-  
 }
-
+@keyframes ani {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 .table tbody tr:nth-child(even) {
   background: #2d2d2d82 !important;
 }
 .table tbody tr:nth-child(even):hover {
-    background: #b0b0b089 !important;
-  }
-  .table tbody tr:hover{
-    background: #000000 !important;
-    background: #b0b0b089 !important;
-  }
+  background: #b0b0b089 !important;
+}
+.table tbody tr:hover {
+  background: #000000 !important;
+  background: #b0b0b089 !important;
+}
 
 .imgUser {
   width: 50px;
@@ -111,6 +119,8 @@ div.fixed-block {
   width: auto;
   height: auto;
   display: flex;
+  opacity: 0;
+  animation: ani 2.5s forwards;
 }
 .buttonsBook {
   height: 50px;

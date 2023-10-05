@@ -47,6 +47,8 @@ nav {
   position: relative;
   border-radius: 3px;
   border: 1px solid grey;
+  opacity: 0;
+  animation: ani 2.5s forwards;
   
 }
 .text1 {
@@ -126,14 +128,20 @@ nav {
 .img1 {
   margin-top: 70px;
   margin-left: 300px;
+  opacity: 0;
+  animation: ani 2.5s forwards;
 }
 .img2 {
   margin-left: 50px;
   margin-top: 300px;
+  opacity: 0;
+  animation: ani 2.5s forwards;
 }
 .img3 {
   margin-left: 250px;
   margin-top: 550px;
+  opacity: 0;
+  animation: ani 2.5s forwards;
 }
 
 .divin {
@@ -214,4 +222,8 @@ input::-webkit-input-placeholder {
  
     
   }
+}
+@keyframes ani {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
 }

@@ -22,6 +22,8 @@ body {
   left: 0;
   right: 0;
   display: flex;
+  opacity: 0;
+  animation: ani 2.5s forwards;
 }
 .table1 {
   width: 700px;
@@ -48,8 +50,6 @@ body {
   font-size: 15px;
   font-family: Kaisei Decol;
   width: 200px;
- 
-  
 }
 .table1 td {
   padding: 7px;
@@ -66,14 +66,14 @@ body {
 .table1 tbody tr:nth-child(even):hover {
   background: #b0b0b089 !important;
 }
-.table1 tbody tr:hover{
+.table1 tbody tr:hover {
   background: #000000 !important;
   background: #b0b0b089 !important;
 }
 .table2 tbody tr:nth-child(even):hover {
   background: #b0b0b089 !important;
 }
-.table2 tbody tr:hover{
+.table2 tbody tr:hover {
   background: #000000 !important;
   background: #b0b0b089 !important;
 }
@@ -129,6 +129,8 @@ body {
   width: auto;
   height: auto;
   display: flex;
+  opacity: 0;
+  animation: ani 2.5s forwards;
 }
 .buttonsBook {
   height: 50px;
@@ -196,22 +198,21 @@ div.scroll {
 div.container {
   width: 700px;
   height: 550px;
-position: fixed;
- 
-  
+  position: fixed;
+
   background-color: rgba(0, 0, 0, 0.416);
   border: 3px solid rgba(128, 128, 128, 0.388);
-
+  opacity: 0;
+  animation: ani 2.5s forwards;
 }
 div.container2 {
+  opacity: 0;
+  animation: ani 2.5s forwards;
   width: 700px;
-  height: 475px;
-position: fixed;
- 
-  
+  height: 462px;
+  position: fixed;
   background-color: rgba(0, 0, 0, 0.416);
   border: 3px solid rgba(128, 128, 128, 0.388);
-
 }
 div.fixed-block {
   width: 30px;
@@ -259,6 +260,10 @@ input::-webkit-input-placeholder {
   100% {
     text-shadow: 0px 4px 4px rgba(255, 200, 0, 0.452);
   }
+}
+@keyframes ani {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
 }
 input:-moz-placeholder {
   color: #fbfcf958;
