@@ -5,7 +5,7 @@ body {
   background-image: url(/assets/background_img6.jpg); 
   background-size: cover;
   background-attachment: fixed;
-  height: 1405px;
+  height: 805px;
   position: absolute;
   top: 0;
   left: 0;
@@ -26,9 +26,9 @@ body {
 }
 div.container {
   width: 1100px;
-  height: 580px;
+  height: 610px;
   position: fixed;
-  margin-top: 100px;
+  margin-top: 70px;
   margin-left: 20px;
   background-color: rgba(0, 0, 0, 0.416);
   border: 3px solid rgba(128, 128, 128, 0.388);
@@ -213,7 +213,7 @@ table {
 }
 table th{
   height: 5px;
-  width: 390px;
+  width: 200px;
 }
 table tr{
   height: 50px;
@@ -380,6 +380,13 @@ form {
   margin-left: 30px;
   width: 200px;
   height:290px;
+}
+
+.imgBorrowedBook{
+  margin-top: 10px;
+  margin-left: 10px;
+  width: 50px;
+  height:70px;
 }
 @keyframes ch-color {
   0% {
