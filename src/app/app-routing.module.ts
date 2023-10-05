@@ -5,6 +5,7 @@ import { LoginComponent } from './login/login.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { HomeComponent } from './home/home.component';
 import { StartpageComponent } from './startpage/startpage.component';
+import { BookmenuComponent } from './bookmenu/bookmenu.component';
 
 const routes: Routes = [
   { path: '', component: NavbarComponent },
@@ -18,7 +19,8 @@ const routes: Routes = [
   },
   { path: 'startpage', component: NavbarComponent },
   { path: 'home', component: HomeComponent },
-  {path:'libMenu', component: StartpageComponent}
+  {path:'libMenu', component: StartpageComponent},
+  {path: 'bookMenu', component: BookmenuComponent}
   
 ];
 

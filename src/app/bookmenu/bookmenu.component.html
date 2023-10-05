@@ -1,0 +1,354 @@
+<body>
+    <div class="bar">
+      <button class="button0" routerLink="/libMenu">USERS</button>
+      <button class="button0" routerLink="/bookMenu">BOOKS</button>
+      <form action="" method="get">
+        <input name="s" placeholder="SEARCH FOR BOOK HERE..." type="search"/>
+        <button type="submit" class="button4">SEARCH</button>
+      </form>
+      <a routerLink="/startpage" style="margin-left: 500px"
+        ><img src="/assets/exit.png" alt="" style="width: 50px; height: 50px"
+      /></a>
+    </div>
+    <div class="tables">
+        <div class="addBook">
+            <div class="addBookText">Add a new book</div>
+            <div style="margin-left: 50px; margin-top: 10px;">
+            <div>
+                <input type="text" placeholder="Title" class="addBookInput" />
+              </div>
+              <div>
+                <input type="text" placeholder="Author" class="addBookInput"/>
+              </div>
+              <div>
+                <input type="text" placeholder="ISBN" class="addBookInput"/>
+              </div>
+              <div>
+                <input type="text" placeholder="Year" class="addBookInput"/>
+              </div>
+            </div>
+            <button class="button0" style="margin-top: 100px; margin-left: 120px; width: 150px;" >Add Book</button>
+        </div>
+      <table class="table">
+        <!-- head -->
+        <thead class="buttonsBook">
+          <th></th>
+          <th></th>
+          <th></th>
+          <th></th>
+          <th></th>
+          <th></th>
+          <th></th>
+          <th><button class="button1">DELETE <br>BOOK(S)</button></th>
+          <th></th>
+          
+        </thead>
+        <thead class="buttonsBook2">
+          <th></th>
+          <th></th>
+          <th></th>
+          <th></th>
+          <th></th>
+          <th></th>
+          <th></th>
+          <th></th>
+          <th></th>
+          
+          
+        </thead>
+
+        <thead>
+          <tr>
+            <th></th>
+            <th></th>
+  
+            <th>TITLE</th>
+            <th>AUTHOR</th>
+            <th>ISBN</th>
+            <th>YEAR</th>
+            <th>STATUS</th>
+            <th></th>
+            <th></th>
+            
+          </tr>
+        </thead>
+        <div class="container">
+            <div class="fixed-block"></div>
+            <div class="scroll">
+        <tbody>
+          <!-- row 1 -->
+          <tr>
+            <th>1</th>
+            <td><img src="/assets/book1.jpg" alt="" class="imgBook" /></td>
+            <td>"Revival"</td>
+            <td>Steven King</td>
+            <td>9780446310789</td>
+            <td>2010</td>
+            <td><span class="available" style="text-align: left;">available</span></td>
+            <td>
+              <div>
+                <input
+                  id="highload0"
+                  class="checkbox-custom"
+                  name="highload0"
+                  type="checkbox"
+                  style="height: 20px; width: 20px"
+                />
+                <label for="highload0" class="checkbox-custom-label"></label>
+              </div>
+            </td>
+          </tr>
+          <!-- row 2 -->
+          <tr>
+            <th>2</th>
+            <td><img src="/assets/book1.jpg" alt="" class="imgBook" /></td>
+            <td>"Revival"</td>
+            <td>Steven King</td>
+            <td>9780446310789</td>
+            <td>2010</td>
+            <td><span class="available">available</span></td>
+            <td>
+              <div>
+                <input
+                  id="highload0"
+                  class="checkbox-custom"
+                  name="highload0"
+                  type="checkbox"
+                  style="height: 20px; width: 20px"
+                />
+                <label for="highload0" class="checkbox-custom-label"></label>
+              </div>
+            </td>
+          </tr>
+          <!-- row 3 -->
+          <tr>
+            <th>3</th>
+            <td><img src="/assets/book1.jpg" alt="" class="imgBook" /></td>
+            <td>"Revival"</td>
+            <td>Steven King</td>
+            <td>9780446310789</td>
+            <td>2010</td>
+            <td><span class="reserved">reserved <br>
+            alinaberns@gmail.com</span></td>
+            <td>
+              <div>
+                <input
+                  id="highload0"
+                  class="checkbox-custom"
+                  name="highload0"
+                  type="checkbox"
+                  style="height: 20px; width: 20px"
+                />
+                <label for="highload0" class="checkbox-custom-label"></label>
+              </div>
+            </td>
+          </tr>
+          <!-- row 4 -->
+          <tr>
+            <th>4</th>
+            <td><img src="/assets/book1.jpg" alt="" class="imgBook" /></td>
+            <td>"Revival"</td>
+            <td>Steven King</td>
+            <td>9780446310789</td>
+            <td>2010</td>
+            <td><span class="available">available</span></td>
+            <td>
+              <div>
+                <input
+                  id="highload0"
+                  class="checkbox-custom"
+                  name="highload0"
+                  type="checkbox"
+                  style="height: 20px; width: 20px"
+                />
+                <label for="highload0" class="checkbox-custom-label"></label>
+              </div>
+            </td>
+          </tr>
+          <!-- row 5 -->
+          <tr>
+            <th>5</th>
+            <td><img src="/assets/book1.jpg" alt="" class="imgBook" /></td>
+            <td>"Revival"</td>
+            <td>Steven King</td>
+            <td>9780446310789</td>
+            <td>2010</td>
+            <td><span class="available">available</span></td>
+            <td>
+              <div>
+                <input
+                  id="highload0"
+                  class="checkbox-custom"
+                  name="highload0"
+                  type="checkbox"
+                  style="height: 20px; width: 20px"
+                />
+                <label for="highload0" class="checkbox-custom-label"></label>
+              </div>
+            </td>
+          </tr>
+          <!-- row 6 -->
+          <tr>
+            <th>6</th>
+            <td><img src="/assets/book1.jpg" alt="" class="imgBook" /></td>
+            <td>"Revival"</td>
+            <td>Steven King</td>
+            <td>9780446310789</td>
+            <td>2010</td>
+            <td><span class="available">available</span></td>
+            <td>
+              <div>
+                <input
+                  id="highload0"
+                  class="checkbox-custom"
+                  name="highload0"
+                  type="checkbox"
+                  style="height: 20px; width: 20px"
+                />
+                <label for="highload0" class="checkbox-custom-label"></label>
+              </div>
+            </td>
+          </tr>
+          <!-- row 7 -->
+          <tr>
+            <th>7</th>
+            <td><img src="/assets/book1.jpg" alt="" class="imgBook" /></td>
+            <td>"Revival"</td>
+            <td>Steven King</td>
+            <td>9780446310789</td>
+            <td>2010</td>
+            <td><span class="reserved">reserved <br>
+                alinaberns@gmail.com</span></td>
+            <td>
+              <div>
+                <input
+                  id="highload0"
+                  class="checkbox-custom"
+                  name="highload0"
+                  type="checkbox"
+                  style="height: 20px; width: 20px"
+                />
+                <label for="highload0" class="checkbox-custom-label"></label>
+              </div>
+            </td>
+          </tr>
+          <!-- row 8 -->
+          <tr>
+            <th>8</th>
+            <td><img src="/assets/book1.jpg" alt="" class="imgBook" /></td>
+            <td>"Revival"</td>
+            <td>Steven King</td>
+            <td>9780446310789</td>
+            <td>2010</td>
+            <td><span class="reserved">reserved <br>
+                alinaberns@gmail.com</span></td>
+            <td>
+              <div>
+                <input
+                  id="highload0"
+                  class="checkbox-custom"
+                  name="highload0"
+                  type="checkbox"
+                  style="height: 20px; width: 20px"
+                />
+                <label for="highload0" class="checkbox-custom-label"></label>
+              </div>
+            </td>
+          </tr>
+          <!-- row 9 -->
+          <tr>
+            <th>9</th>
+            <td><img src="/assets/book1.jpg" alt="" class="imgBook" /></td>
+            <td>"Revival"</td>
+            <td>Steven King</td>
+            <td>9780446310789</td>
+            <td>2010</td>
+            <td><span class="available">available</span></td>
+            <td>
+              <div>
+                <input
+                  id="highload0"
+                  class="checkbox-custom"
+                  name="highload0"
+                  type="checkbox"
+                  style="height: 20px; width: 20px"
+                />
+                <label for="highload0" class="checkbox-custom-label"></label>
+              </div>
+            </td>
+          </tr>
+          <!-- row 10 -->
+          <tr>
+            <th>10</th>
+            <td><img src="/assets/book1.jpg" alt="" class="imgBook" /></td>
+            <td>"Revival"</td>
+            <td>Steven King</td>
+            <td>9780446310789</td>
+            <td>2010</td>
+            <td><span class="reserved">reserved <br>
+                alinaberns@gmail.com</span></td>
+            <td>
+              <div>
+                <input
+                  id="highload0"
+                  class="checkbox-custom"
+                  name="highload0"
+                  type="checkbox"
+                  style="height: 20px; width: 20px"
+                />
+                <label for="highload0" class="checkbox-custom-label"></label>
+              </div>
+            </td>
+          </tr>
+          <!-- row 11 -->
+          <tr>
+            <th>11</th>
+            <td><img src="/assets/book1.jpg" alt="" class="imgBook" /></td>
+            <td>"Revival"</td>
+            <td>Steven King</td>
+            <td>9780446310789</td>
+            <td>2010</td>
+            <td><span class="available">available</span></td>
+            <td>
+              <div>
+                <input
+                  id="highload0"
+                  class="checkbox-custom"
+                  name="highload0"
+                  type="checkbox"
+                  style="height: 20px; width: 20px"
+                />
+                <label for="highload0" class="checkbox-custom-label"></label>
+              </div>
+            </td>
+          </tr>
+          <!-- row 7 -->
+          <tr>
+            <th>12</th>
+            <td><img src="/assets/book1.jpg" alt="" class="imgBook" /></td>
+            <td>"Revival"</td>
+            <td>Steven King</td>
+            <td>9780446310789</td>
+            <td>2010</td>
+            <td><span class="reserved">reserved <br>
+                alinaberns@gmail.com</span></td>
+            <td>
+              <div>
+                <input
+                  id="highload0"
+                  class="checkbox-custom"
+                  name="highload0"
+                  type="checkbox"
+                  style="height: 20px; width: 20px"
+                />
+                <label for="highload0" class="checkbox-custom-label"></label>
+              </div>
+            </td>
+          </tr>
+        </tbody>
+        </div>
+    </div>
+      </table>
+    </div>
+  </body>
+  

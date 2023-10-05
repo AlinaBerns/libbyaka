@@ -11,6 +11,7 @@ import { StartpageComponent } from './startpage/startpage.component';
 import { FormsModule } from '@angular/forms';
 import { ModalOutletComponent } from './modal-outlet/modal-outlet.component';
 import { PortalDirective } from './portal.directive';
+import { BookmenuComponent } from './bookmenu/bookmenu.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { PortalDirective } from './portal.directive';
     RegistrationComponent,
     StartpageComponent,
     ModalOutletComponent,
-    PortalDirective
+    PortalDirective,
+    BookmenuComponent
   ],
   imports: [
     BrowserModule,
