@@ -2,7 +2,7 @@ body {
   margin: auto;
   outline: none;
  
-  background-image: url(/assets/background_img4.jpg); 
+  background-image: url(/assets/background_img6.jpg); 
   background-size: cover;
   background-attachment: fixed;
   height: 1405px;
@@ -33,6 +33,7 @@ div.container {
   background-color: rgba(0, 0, 0, 0.416);
   border: 3px solid rgba(128, 128, 128, 0.388);
   display: inline-block;
+  border-radius: 0%;
 }
 .block {
   background-color: rgba(0, 0, 0, 0.733);
@@ -45,7 +46,7 @@ div.container {
 div.scroll {
   width: 100%;
   height: 100%;
-  border-radius: 30px;
+  
   position: absolute;
   top: 0;
   left: 0;
@@ -71,7 +72,7 @@ div.fixed-block {
 #line_block {
   display: inline-block;
   width: 250px;
-  height: 330px;
+  height: 350px;
   margin: 0 15px 15px 0;
   text-align: center;
 }
@@ -93,7 +94,7 @@ div.fixed-block {
   bottom: 0;
   left: 0;
   right: 0;
-  margin-left: 12px;
+  margin-left: 10px;
   font-family: Kaisei Decol;
   font-size: large;
   background: rgba(0, 0, 0, 0.874);
@@ -141,9 +142,17 @@ div.fixed-block {
 
 .available {
   color: green;
-  text-align: 10;
+  
   text-align: center;
-  margin: 0%;
+  margin-left: 15px;
+  margin-top: 50px;
+}
+.reserved {
+  color: rgb(128, 0, 0);
+  
+  text-align: center;
+  margin-left: 15px;
+  margin-top: 50px;
 }
 
 .userPhoto {

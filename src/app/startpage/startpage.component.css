@@ -4,8 +4,8 @@ body {
   outline: none;
   background-image: url(/assets/background_img6.jpg);
   background-size: cover;
-  background-attachment: fixed;
-  height: 750px;
+  
+  height: 1000px;
   position: absolute;
   top: 0;
   left: 0;
@@ -61,20 +61,19 @@ body {
   text-align: right;
 }
 .table1 tbody tr:nth-child(even) {
-  background: #2d2d2db1 !important;
+  background: #2d2d2d4e !important;
 }
 .table1 tbody tr:nth-child(even):hover {
   background: #b0b0b089 !important;
 }
 .table1 tbody tr:hover {
-  background: #000000 !important;
   background: #b0b0b089 !important;
 }
 .table2 tbody tr:nth-child(even):hover {
   background: #b0b0b089 !important;
 }
 .table2 tbody tr:hover {
-  background: #000000 !important;
+ 
   background: #b0b0b089 !important;
 }
 
@@ -113,7 +112,7 @@ body {
   width: 1000px;
 }
 .table2 tbody tr:nth-child(even) {
-  background: #2d2d2db1 !important;
+  background: #2d2d2d5c !important;
 }
 
 .imgUser {
