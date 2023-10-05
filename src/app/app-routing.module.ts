@@ -1,26 +1,26 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { RegistrationComponent } from './registration/registration.component';
-import { LoginComponent } from './login/login.component';
-import { NavbarComponent } from './navbar/navbar.component';
-import { HomeComponent } from './home/home.component';
-import { StartpageComponent } from './startpage/startpage.component';
-import { BookmenuComponent } from './bookmenu/bookmenu.component';
+import { UserAccountComponent } from './user.account/useraccount.component';
+import { LogInComponent } from './login/login.component';
+import { HomeComponent } from './user.home/home.component';
+import { AdminUsersComponent } from './admin.users/adminusers.component';
+import { AdminBooksComponent } from './admin.books/adminbooks.component';
 
 const routes: Routes = [
-  { path: '', component: NavbarComponent },
+  { path: 'login', component: LogInComponent },
   {
     path: 'registration',
     component: RegistrationComponent,
   },
   {
-    path: 'login',
-    component: LoginComponent,
+    path: 'user/account',
+    component: UserAccountComponent,
   },
-  { path: 'startpage', component: NavbarComponent },
-  { path: 'home', component: HomeComponent },
-  {path:'libMenu', component: StartpageComponent},
-  {path: 'bookMenu', component: BookmenuComponent}
+  { path: 'user/home', component: HomeComponent },
+  { path:'admin/users', component: AdminUsersComponent},
+  { path: 'admin/books', component: AdminBooksComponent},
+  
   
 ];
 
