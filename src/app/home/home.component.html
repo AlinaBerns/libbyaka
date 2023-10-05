@@ -4,7 +4,91 @@
     <button class="button1">
       CART
       <ul class="submenu">
-        <button class="button3">RESERVE BOOKS</button>
+        <table class="table2">
+          <div class="container3">
+            <div class="fixed-block"></div>
+            <div class="scroll">
+            
+              <th style="width: 300px;"></th>
+              <th style="width: 50px;"></th>
+              <th style="width: 50px;"></th>
+              <tr>
+                <td>Stephen King <br> "Revival"</td>
+                <td>(3)</td>
+                <td><div>
+                  <input
+                    id="highload0"
+                    class="checkbox-custom"
+                    name="highload0"
+                    type="checkbox"
+                    style="height: 20px; width: 20px"
+                  />
+                  <label for="highload0" class="checkbox-custom-label"></label>
+                </div></td>
+              </tr>
+              <tr>
+                <td>Stephen King <br> "The Outsider"</td>
+                <td>(2)</td>
+                <td><div>
+                  <input
+                    id="highload0"
+                    class="checkbox-custom"
+                    name="highload0"
+                    type="checkbox"
+                    style="height: 20px; width: 20px"
+                  />
+                  <label for="highload0" class="checkbox-custom-label"></label>
+                </div></td>
+              </tr>
+              <tr>
+                
+                <td>Edgar Allan Poe <br>"The Raven"</td>
+                <td>(1)</td>
+                <td><div>
+                  <input
+                    id="highload0"
+                    class="checkbox-custom"
+                    name="highload0"
+                    type="checkbox"
+                    style="height: 20px; width: 20px"
+                  />
+                  <label for="highload0" class="checkbox-custom-label"></label>
+                </div></td>
+              </tr>
+              <tr>
+                <td>Daniel Keyes <br>"The Minds Of Billy Milligan"</td>
+                <td>(1)</td>
+                <td><div>
+                  <input
+                    id="highload0"
+                    class="checkbox-custom"
+                    name="highload0"
+                    type="checkbox"
+                    style="height: 20px; width: 20px"
+                  />
+                  <label for="highload0" class="checkbox-custom-label"></label>
+                </div></td>
+              </tr>
+              <tr>
+                <td>Stephen King <br>"Carrie"</td>
+                <td>(1)</td>
+                <td><div>
+                  <input
+                    id="highload0"
+                    class="checkbox-custom"
+                    name="highload0"
+                    type="checkbox"
+                    style="height: 20px; width: 20px"
+                  />
+                  <label for="highload0" class="checkbox-custom-label"></label>
+                </div></td>
+              </tr>
+              
+            </div>
+          </div>
+        </table>
+        <button class="button3">DELETE BOOK(S)</button>
+        <button class="button3">RESERVE BOOK(S)</button>
         <button class="button3">CLEAR CART</button>
       </ul>
     </button>
@@ -13,8 +97,8 @@
       <button type="submit" class="button4">SEARCH</button>
     </form>
     <a routerLink="/startpage" style="margin-left: 550px"
-        ><img src="/assets/exit.png" alt="" style="width: 50px; height: 50px"
-      /></a>
+      ><img src="/assets/exit.png" alt="" style="width: 50px; height: 50px"
+    /></a>
   </div>
   <div class="block">
     <div class="avatar online" style="margin-top: 100px; margin-left: 145px">
@@ -27,59 +111,72 @@
     <button class="button2" routerLink="/login">EDIT PROFILE</button>
     <p class="userText2">BORROWED BOOKS</p>
   </div>
-  
+
   <table>
-    
     <div class="container2">
       <div class="fixed-block"></div>
       <div class="scroll">
-        <th style="width: 50px;"></th>
-        <th style="width: 320px;"></th>
-    <tr>
-      <td><img src="/assets/book21.jpg" alt="" class="imgBorrowedBook"></td>
-      <td>Test-"Test2"</td>
-    </tr>
-    <tr>
-      <td><img src="/assets/book21.jpg" alt="" class="imgBorrowedBook"></td>
-      <td>Test-"Test2"</td>
-    </tr>
-    <tr>
-      <td><img src="/assets/book21.jpg" alt="" class="imgBorrowedBook"></td>
-      <td>Test-"Test2"</td>
-    </tr>
-    <tr>
-      <td><img src="/assets/book21.jpg" alt="" class="imgBorrowedBook"></td>
-      <td>Test-"Test2"</td>
-    </tr>
-    <tr>
-      <td><img src="/assets/book21.jpg" alt="" class="imgBorrowedBook"></td>
-      <td>Test-"Test2"</td>
-    </tr>
-  
-    </div>
-
+        <th style="width: 100px"></th>
+        <th style="width: 200px;"></th>
+        <th style="width: 200px;"></th>
+        <tr>
+          <td>
+            <img src="/assets/book1.jpg" alt="" class="imgBorrowedBook" />
+          </td>
+          <td>Stephen King</td>
+          <td>"Revival"</td>
+        </tr>
+        <tr>
+          <td>
+            <img src="/assets/book5.jpg" alt="" class="imgBorrowedBook" />
+          </td>
+          <td>Stephen King</td>
+          <td>"The Outsider"</td>
+        </tr>
+        <tr>
+          <td>
+            <img src="/assets/book14.jpg" alt="" class="imgBorrowedBook" />
+          </td>
+          <td>Edgar Allan Poe</td>
+          <td>"The Raven"</td>
+        </tr>
+        <tr>
+          <td>
+            <img src="/assets/book20.jpg" alt="" class="imgBorrowedBook" />
+          </td>
+          <td>Daniel Keyes</td>
+          <td>"The Minds Of Billy Milligan"</td>
+        </tr>
+        <tr>
+          <td>
+            <img src="/assets/book21.jpg" alt="" class="imgBorrowedBook" />
+          </td>
+          <td>Stephen King</td>
+          <td>"Carrie"</td>
+        </tr>
+      </div>
     </div>
   </table>
   <div class="container">
     <div class="fixed-block"></div>
     <div class="scroll">
       <div id="line_block" class="hover-image-scale">
-        <img src="/assets/book1.jpg" alt="" class="imgBook"/>
+        <img src="/assets/book1.jpg" alt="" class="imgBook" />
         <span class="available">available</span>
         <p class="img__description">
           REVIVAL <br /><br />November 11, 2014 <br /><br />Stephen King <br />
           <br />
-          
+
           <button class="button5">ADD TO CART</button>
         </p>
       </div>
 
-      <div id="line_block" class="hover-image-scale" >
+      <div id="line_block" class="hover-image-scale">
         <img src="/assets/book4.jpg" alt="" class="imgBook" />
         <span class="reserved">unavailable</span>
         <p class="img__description">
           description <br />
-          
+
           <button class="button5">ADD TO CART</button>
         </p>
       </div>
@@ -122,7 +219,7 @@
         <span class="available">available</span>
         <p class="img__description">
           description <br />
-          
+
           <button class="button5">ADD TO CART</button>
         </p>
       </div>
@@ -131,7 +228,7 @@
         <span class="available">available</span>
         <p class="img__description">
           description <br />
-          
+
           <button class="button5">ADD TO CART</button>
         </p>
       </div>
@@ -140,7 +237,7 @@
         <span class="available">available</span>
         <p class="img__description">
           description <br />
-         
+
           <button class="button5">ADD TO CART</button>
         </p>
       </div>
@@ -150,7 +247,7 @@
         <span class="available">available</span>
         <p class="img__description">
           description <br />
-         
+
           <button class="button5">ADD TO CART</button>
         </p>
       </div>
@@ -159,7 +256,7 @@
         <span class="available">available</span>
         <p class="img__description">
           description <br />
-          
+
           <button class="button5">ADD TO CART</button>
         </p>
       </div>
@@ -168,7 +265,7 @@
         <span class="available">available</span>
         <p class="img__description">
           description <br />
-          
+
           <button class="button5">ADD TO CART</button>
         </p>
       </div>
@@ -177,7 +274,7 @@
         <span class="available">available</span>
         <p class="img__description">
           description <br />
-          
+
           <button class="button5">ADD TO CART</button>
         </p>
       </div>
@@ -186,7 +283,7 @@
         <span class="available">available</span>
         <p class="img__description">
           description <br />
-          
+
           <button class="button5">ADD TO CART</button>
         </p>
       </div>
@@ -195,7 +292,7 @@
         <span class="available">available</span>
         <p class="img__description">
           description <br />
-          
+
           <button class="button5">ADD TO CART</button>
         </p>
       </div>
@@ -204,7 +301,7 @@
         <span class="available">available</span>
         <p class="img__description">
           description <br />
-          
+
           <button class="button5">ADD TO CART</button>
         </p>
       </div>
@@ -213,7 +310,7 @@
         <span class="available">available</span>
         <p class="img__description">
           description <br />
-          
+
           <button class="button5">ADD TO CART</button>
         </p>
       </div>
@@ -222,7 +319,7 @@
         <span class="available">available</span>
         <p class="img__description">
           description <br />
-          
+
           <button class="button5">ADD TO CART</button>
         </p>
       </div>
@@ -231,7 +328,7 @@
         <span class="available">available</span>
         <p class="img__description">
           description <br />
-         
+
           <button class="button5">ADD TO CART</button>
         </p>
       </div>
@@ -240,7 +337,7 @@
         <span class="available">available</span>
         <p class="img__description">
           description <br />
-          
+
           <button class="button5">ADD TO CART</button>
         </p>
       </div>

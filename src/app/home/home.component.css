@@ -1,8 +1,8 @@
 body {
   margin: auto;
   outline: none;
- 
-  background-image: url(/assets/background_img6.jpg); 
+
+  background-image: url(/assets/background_img6.jpg);
   background-size: cover;
   background-attachment: fixed;
   height: 805px;
@@ -35,6 +35,15 @@ div.container {
   display: inline-block;
   border-radius: 0%;
 }
+div.container3 {
+  width: 250px;
+  height: 200px;
+  position: fixed;
+  background-color: rgb(0, 0, 0);
+  border: 1px solid rgb(128, 128, 128);
+  display: inline-block;
+  border-radius: 0%;
+}
 .block {
   background-color: rgba(0, 0, 0, 0.733);
   float: right;
@@ -48,7 +57,7 @@ div.container {
 div.scroll {
   width: 100%;
   height: 100%;
-  
+
   position: absolute;
   top: 0;
   left: 0;
@@ -69,11 +78,9 @@ div.container2 {
   position: fixed;
   background-color: rgba(0, 0, 0, 0.416);
   border: 3px solid rgba(128, 128, 128, 0.388);
-  
-  border-radius: 0%;
- 
-}
 
+  border-radius: 0%;
+}
 
 .imgLogo {
   height: 35px;
@@ -126,7 +133,7 @@ div.container2 {
 }
 .button1 {
   margin-top: 13px;
-  width: 200px;
+  width: 250px;
   height: 25px;
   background: rgba(0, 0, 0, 0.146);
   color: #ffffffae;
@@ -154,14 +161,14 @@ div.container2 {
 
 .available {
   color: green;
-  
+
   text-align: center;
   margin-left: 15px;
   margin-top: 50px;
 }
 .reserved {
   color: rgb(128, 0, 0);
-  
+
   text-align: center;
   margin-left: 15px;
   margin-top: 50px;
@@ -180,8 +187,6 @@ div.container2 {
   text-align: center;
   font-weight: bold;
   word-break: break-all;
-  
- 
 }
 .userText2 {
   font-size: 20px;
@@ -191,44 +196,76 @@ div.container2 {
   font-weight: bold;
   word-break: break-all;
   margin-top: 20px;
- 
 }
 table {
   position: fixed;
   text-align: center;
-  width:390px;
+  width: 390px;
   height: 320px;
   margin-top: 360px;
   margin-left: 1130px;
-  
-  
+
   font-family: Kaisei Decol;
   border-collapse: collapse;
-  
+
   background: #111111c7 !important;
 
   color: #f8f8f8;
   border-radius: 0%;
   border: 1px solid grey;
 }
-table th{
+.table2 {
+  position: fixed;
+  text-align: center;
+  width: 400px;
+  height: 300px;
+  margin-top: 0px;
+  margin-left: -204px;
+  font-family: Kaisei Decol;
+  border-collapse: collapse;
+
+  background: #11111100 !important;
+
+  color: #f8f8f8a5;
+  border-radius: 0%;
+  border: 1px solid rgba(128, 128, 128, 0);
+}
+table th {
   height: 5px;
   width: 200px;
 }
-table tr{
-  height: 50px;
-  width: 300px;
+.table2 th {
+  height: 5px;
+  width: 200px;
 }
-table  tr:nth-child(even) {
+table tr {
+  height: 50px;
+  font-size: 17px;
+  text-align: center;
+}
+.table2 tr {
+  height: 50px;
+  font-size: 17px;
+  text-align: center;
+}
+table tr:nth-child(even) {
   background: #2d2d2d82 !important;
 }
-table  tr:nth-child(even):hover {
+.table2 tr:nth-child(even) {
+  background: #00000082 !important;
+}
+table tr:nth-child(even):hover {
   background: #b0b0b089 !important;
 }
-table  tr:hover {
+.table2 tr:nth-child(even):hover {
   background: #b0b0b089 !important;
 }
-
+table tr:hover {
+  background: #b0b0b089 !important;
+}
+.table2 tr:hover {
+  background: #b0b0b089 !important;
+}
 
 button:hover {
   transition: 1s;
@@ -269,12 +306,12 @@ ul > li > a:hover {
   text-align: center;
 }
 .submenu {
-  background: rgb(0, 0, 0);
-  border: 3px solid rgba(128, 128, 128, 0.388);
+  background: rgba(0, 0, 0, 0);
+  border: 3px solid rgba(128, 128, 128, 0);
   opacity: 0;
   position: relative;
 
-  max-width: 400px;
+  width: 470px;
   height: 200px;
 
   transform: perspective(600px) rotateX(-90deg);
@@ -287,7 +324,7 @@ ul > li > a:hover {
 }
 
 .button3 {
-  background-color: rgba(0, 0, 0, 0.091);
+  background-color: rgb(0, 0, 0);
   color: #fefdfd94;
   font-family: Kaisei HarunoUmi;
   font-size: 15px;
@@ -296,7 +333,6 @@ ul > li > a:hover {
   margin-left: 200px;
   border: 1px solid grey;
   margin-top: 10px;
-
 }
 .button4 {
   background-color: rgba(0, 0, 0, 0.091);
@@ -320,11 +356,9 @@ input {
 }
 
 input::-webkit-input-placeholder {
-  
   color: #ffffff99;
   font-style: italic;
   background: #000000;
-  
 }
 @keyframes ch-color {
   0% {
@@ -341,8 +375,6 @@ input::-webkit-input-placeholder {
   }
   100% {
     text-shadow: 0px 4px 4px rgba(255, 200, 0, 0.452);
- 
-    
   }
 }
 input:-moz-placeholder {
@@ -357,7 +389,7 @@ input:-ms-input-placeholder {
 }
 form {
   margin-top: 10px;
-  margin-left: 300px;
+  margin-left: 260px;
   border: 1px solid grey;
   height: 30px;
 }
@@ -375,18 +407,18 @@ form {
   display: block;
   border: 1px solid grey;
 }
-.imgBook{
+.imgBook {
   margin-top: 30px;
   margin-left: 30px;
   width: 200px;
-  height:290px;
+  height: 290px;
 }
 
-.imgBorrowedBook{
+.imgBorrowedBook {
   margin-top: 10px;
   margin-left: 10px;
   width: 50px;
-  height:70px;
+  height: 70px;
 }
 @keyframes ch-color {
   0% {
@@ -403,7 +435,5 @@ form {
   }
   100% {
     text-shadow: 0px 4px 4px rgba(255, 200, 0, 0.452);
- 
-    
   }
 }
