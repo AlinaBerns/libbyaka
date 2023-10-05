@@ -90,6 +90,13 @@ div.fixed-block {
 .table tbody tr:nth-child(even) {
   background: #2d2d2d82 !important;
 }
+.table tbody tr:nth-child(even):hover {
+    background: #b0b0b089 !important;
+  }
+  .table tbody tr:hover{
+    background: #000000 !important;
+    background: #b0b0b089 !important;
+  }
 
 .imgUser {
   width: 50px;
