@@ -10,19 +10,21 @@
     <div class="text0">
       (C) René Descartes
     </div>
+
+    <form (submit)="register()">
     <div class="loginbox">
       <div class="text2">REGISTRATION</div>
       <div>
-        <input type="text" placeholder="First Name" />
+        <input type="text" [(ngModel)]="username" name="username" placeholder="username" required/>
       </div>
       <div>
-        <input type="text" placeholder="Last Name" />
+        <input type="text" placeholder="DELETE THIS ?" />
       </div>
       <div>
-        <input type="text" placeholder="Email" />
+        <input type="text" [(ngModel)]="email" name="email" placeholder="email" required />
       </div>
       <div>
-        <input type="password" placeholder="Password" />
+        <input type="password" [(ngModel)]="password" name="password" placeholder="Password" required />
       </div>
       <button>SIGN UP</button>
       <div class="text3">
@@ -30,6 +32,8 @@
       </div>
       <button routerLink="/login">LOG IN</button>
     </div>
+
+    </form>
     <div class="text4">
       
       Free Library

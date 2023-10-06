@@ -20,7 +20,7 @@ section {
 /* background: rgba(0, 28, 16, 0.413); */
 
 /* } */
-section > div > div > button {
+button {
   margin-top: 25px;
   width: 400px;
   height: 35px;
@@ -33,7 +33,7 @@ section > div > div > button {
   margin-left: 283px;
   border: 1px solid grey;
 }
-section > div > div > button:hover {
+button:hover {
   transition: 1s;
   color: white;
   background: rgb(3, 3, 3);
