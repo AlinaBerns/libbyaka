@@ -1,46 +1,37 @@
 body {
   margin: auto;
   outline: none;
-  background-image: url(/assets/background_img4.jpg);
+  background-image: url(/assets/background_img6.jpg);
   background-size: cover;
   background-attachment: fixed;
-  height: 710px;
+  height: 1000px;
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
 }
-.bar {
-  width: auto;
-  height: 50px;
-  background-color: rgb(0, 0, 0);
-  border: 3px solid rgba(128, 128, 128, 0.306);
-  position: fixed;
-  z-index: 100;
-  top: 0;
-  left: 0;
-  right: 0;
-  display: flex;
-}
+
 
 .block {
   width: 400px;
-  height: 200px;
+  height: 210px;
   background-color: rgba(0, 0, 0, 0.749);
   top: 0;
-  margin-left: 50px;
-  border: 3px solid rgba(128, 128, 128, 0.306);
+  
+  border: 1px solid rgba(255, 255, 255, 0.664);
   display: inline-block;
-  position: fixed;
+ position: fixed;
+  animation: ani 2.5s forwards;
+
 }
 .block2 {
-  width: 1000px;
-  height: 705px;
+  width: 1097px;
+  height: 970px;
   background-color: rgba(0, 0, 0, 0.872);
-  margin-left: 500px;
-  border: 3px solid rgba(128, 128, 128, 0.306);
+  margin-left: 420px;
+  border: 1px solid rgba(255, 255, 255, 0.664);
   display: inline-block;
-  position: fixed;
+  animation: ani 2.5s forwards;
 }
 .block3 {
   width: 400px;
@@ -51,6 +42,8 @@ body {
   display: inline-block;
   position: fixed;
   margin-top: 210px;
+  animation: ani 2.5s forwards;
+
 }
 .text1 {
   font-size: 20px;
@@ -65,9 +58,25 @@ body {
   font-family: Kaisei Decol;
   text-align: center;
   margin-top: 50px;
+  
   animation: ch-color 3s infinite;
 }
 .button2 {
+  margin-top: 8px;
+  width: 110px;
+  height: 35px;
+  background: rgba(0, 0, 0, 0.461);
+  color: #ffffffae;
+  text-align: center;
+  text-shadow: rgba(255, 255, 0, 0.041);
+  font-family: Kaisei Decol;
+  font-size: 15px;
+  float: right;
+  margin-top: 10px;
+  margin-right: 10px;
+  border: 1px solid grey;
+}
+.button3 {
   margin-top: 8px;
   width: 100px;
   height: 35px;
@@ -77,32 +86,42 @@ body {
   text-shadow: rgba(255, 255, 0, 0.041);
   font-family: Kaisei Decol;
   font-size: 15px;
-  float: right;
   margin-top: 40px;
-  margin-right: 20px;
+  margin-left: 500px;
   border: 1px solid grey;
 }
-.button3 {
+.button01 {
   margin-top: 8px;
-  width: 200px;
+  width: 150px;
   height: 35px;
-  background: rgba(0, 0, 0, 0.461);
+  background: rgba(192, 7, 7, 0.461);
   color: #ffffffae;
   text-align: center;
   text-shadow: rgba(255, 255, 0, 0.041);
   font-family: Kaisei Decol;
   font-size: 15px;
   margin-top: 40px;
-  margin-left: 385px;
+  margin-left: 475px;
   border: 1px solid grey;
 }
+
+.button01:hover{
+  background: rgba(192, 7, 7, 0.719);
+  color: #ffffff;
+}
 table {
-  border-collapse: collapse;
-
+  position: fixed;
+ margin-left: -50px;
   text-align: center;
-
-  width: 400px;
-  color: rgba(255, 255, 255, 0.795);
+  width: 390px;
+  height: 320px;
+  font-family: Kaisei Decol;
+  border-collapse: collapse;
+  background: #11111100 !important;
+  color: #f8f8f8;
+  border-radius: 0%;
+  opacity: 0;
+  animation: ani 2.5s forwards;
 }
 input {
   width: 700px;
@@ -111,7 +130,7 @@ input {
   border-radius: 20px;
   background: rgba(217, 217, 217, 0.304);
   margin-top: 30px;
-  margin-left: 130px;
+  margin-left: 200px;
   color: #f9f7f7c6;
   text-align: center;
   font-size: large;
@@ -125,13 +144,11 @@ input::-webkit-input-placeholder {
   font-family: Kaisei Decol;
 }
 
-th {
-  border: 2px solid rgb(43, 37, 37);
-  background-color: black;
+table th {
+  height: 5px;
+  width: 200px;
 }
-td {
-  border: 1px solid rgb(0, 0, 0);
-}
+
 .tableCaption {
   color: rgba(255, 255, 255, 0.562);
   font-size: 17px;
@@ -139,16 +156,27 @@ td {
   font-weight: bold;
   margin-top: 50px;
 }
-tr {
-  border: 1px solid rgb(51, 48, 48);
-  background-color: rgba(0, 0, 0, 0.58);
-  word-break: break-all;
+table tr {
+  height: 50px;
+  font-size: 17px;
+  text-align: center;
 }
+table tr:nth-child(even) {
+  background: #2d2d2d82 !important;
+}
+table tr:nth-child(even):hover {
+  background: #b0b0b089 !important;
+}
+table tr:hover {
+  background: #b0b0b089 !important;
+}
+
 button:hover {
   transition: 1s;
   color: white;
   background: rgb(3, 3, 3);
 }
+
 @keyframes ch-color {
   0% {
     text-shadow: 0px 4px 4px rgba(255, 204, 0, 0.418);
@@ -166,3 +194,77 @@ button:hover {
     text-shadow: 0px 4px 4px rgba(255, 200, 0, 0.452);
   }
 }
+@keyframes ani {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+div.scroll {
+  width: 100%;
+  height: 100%;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow-y: scroll;
+  background-color: rgba(0, 0, 0, 0.708);
+}
+div.fixed-block {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  z-index: 2;
+  top: 20px;
+  right: 20px;
+}
+div.container2 {
+  width: 400px;
+  height: 495px;
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.416);
+  border: 1px solid rgba(255, 255, 255, 0.664);
+  opacity: 0;
+  animation: ani 2.5s forwards;
+  border-radius: 0%;
+  
+}
+.imgBorrowedBook {
+  margin-top: 10px;
+  margin-left: 10px;
+  width: 50px;
+  height: 70px;
+}
+.userText2 {
+  font-size: 20px;
+  color: rgba(255, 255, 255, 0.571);
+  font-family: Kaisei Decol;
+  text-align: center;
+  font-weight: bold;
+  word-break: break-all;
+  margin-top: 100px;
+}
+ul > li > a {
+  display: inline-block;
+  color: #ffffffc3;
+  text-align: right;
+  font-family: Kaisei Decol;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+ul>li>a:hover{
+  color: #ffffff;
+}
+ul > li {
+  display: inline-block;
+  text-align: right;
+  margin-right: 200px;
+  
+  margin-top: 5px;
+}
+

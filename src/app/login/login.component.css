@@ -165,6 +165,9 @@ ul > li {
   margin-left: 67px;
   margin-top: 40px;
 }
+ul>li>a:hover{
+  color: #ffffff;
+}
 input {
   width: 300px;
   height: 30px;

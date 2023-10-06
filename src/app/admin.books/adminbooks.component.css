@@ -4,7 +4,7 @@ body {
   outline: none;
   background-image: url(/assets/background_img6.jpg);
   background-size: cover;
-  
+
   height: 1000px;
 
   top: 0;
@@ -249,9 +249,9 @@ form {
   border: 1px solid grey;
   transition: 1s;
 }
-.addBook:hover{
-    background-color: #000000be;
-    transition: 1s;
+.addBook:hover {
+  background-color: #000000be;
+  transition: 1s;
 }
 .addBookInput {
   margin-top: 30px;

@@ -39,12 +39,12 @@ section > div > div > button:hover {
   background: rgb(3, 3, 3);
 }
 .block {
-  width: 1514px;
+  width: 1519px;
   height: 1406px;
   background: rgba(0, 28, 16, 0.443);
-  float: right;
+  float: left;
   border: 1px solid grey;
-  
+  animation: ani 2.5s forwards;
 }
 .text1 {
   color: #d7d7d7;
@@ -71,7 +71,9 @@ section > div > div > button:hover {
 .text0 {
   flex-shrink: 0;
   color: #d7d7d7a9;
-  text-align: center;
+  text-align: right;
+  margin-right: 300px;
+  
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   font-family: Kameron;
   font-size: 20px;
@@ -208,5 +210,13 @@ input::-webkit-input-placeholder {
     text-shadow: 0px 4px 4px rgba(255, 200, 0, 0.452);
  
     
+  }
+}
+@keyframes ani {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
   }
 }

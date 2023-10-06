@@ -4,8 +4,8 @@ body {
 
   background-image: url(/assets/background_img6.jpg);
   background-size: cover;
-  background-attachment: fixed;
-  height: 805px;
+  
+  height: 920px;
   position: absolute;
   top: 0;
   left: 0;
@@ -284,30 +284,26 @@ button:hover {
 ul > li > a {
   display: inline-block;
   color: #ffffffc3;
-  text-align: center;
+  text-align: right;
   font-family: Kaisei Decol;
   font-size: 15px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+  margin-top: 900px;
+  margin-left: 270px;
+  
+}
+
+ul>li>a:hover{
+  color: #ffffff;
 }
 ul > li {
   display: inline-block;
+  text-align: right;
+}
 
-  margin-right: 120px;
-  margin-left: 120px;
-  margin-top: 1360px;
-}
-ul > li > a:hover {
-  display: inline-block;
-  color: #ffffff;
-  text-align: center;
-  font-family: Kaisei Decol;
-  font-size: 15px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-}
+
 .text4 {
   color: #fefdfd94;
   font-family: Kaisei HarunoUmi;
