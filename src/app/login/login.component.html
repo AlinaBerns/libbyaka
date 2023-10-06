@@ -16,6 +16,7 @@
     <!-- /> -->
     <!-- </div> -->
     <!-- </div> -->
+    
     <div class="img1 divin">
       <img src="/assets/book1.jpg" alt="" class="grey-image" />
     </div>
@@ -34,13 +35,16 @@
         THOUSANDS OF WORLDS<br />
         ON ONE SITE
       </div>
+
+  <!-- <LogIn Form> -->
+    <form (submit)="login()">
       <div class="loginbox">
         <div class="text2">LOGIN</div>
         <div>
-          <input type="text" placeholder="Email" />
+        <input type="text" placeholder="username" [(ngModel)]="username" name="username" placeholder="username" required/>
         </div>
         <div>
-          <input type="password" placeholder="Password" />
+          <input type="password" placeholder="Password" [(ngModel)]="password" name="password" placeholder="Password" required/>
         </div>
         <button class="button0" routerLink="/admin/home">LOG IN</button>
         <div class="text3">
@@ -48,6 +52,8 @@
         </div>
         <button class="button0" routerLink="/registration">SIGN UP</button>
       </div>
+   </form>
+
       <div class="text01">
         Our project was created in 2023 by three enthusiasts in <br />order for
         people to love reading even more.<br /><br />
