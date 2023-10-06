@@ -9,19 +9,19 @@ import { AdminBooksComponent } from './admin.books/adminbooks.component';
 import { authGuard } from './security/auth.guard';
 
 const routes: Routes = [
-  { path: '', component: LogInComponent },
-  { path: 'login', component: LogInComponent },
+  { path: '', component: LogInComponent, canActivate: [authGuard]},
+  { path: 'login', component: LogInComponent, canActivate: [authGuard]},
   {
     path: 'registration',
-    component: RegistrationComponent,
+    component: RegistrationComponent, canActivate: [authGuard]
   },
   {
     path: 'user/account',
-    component: UserAccountComponent,
+    component: UserAccountComponent, canActivate: [authGuard], data: { allowedRoles: ['ROLE_USER', 'ROLE_MODERATOR', 'ROLE_ADMIN'] }
   },
   { path: 'user/home', component: HomeComponent, canActivate: [authGuard], data: { allowedRoles: ['ROLE_USER', 'ROLE_MODERATOR', 'ROLE_ADMIN'] } },
   { path:'admin/users', component: AdminUsersComponent, canActivate: [authGuard], data: { allowedRoles: ['ROLE_ADMIN'] } },
-  { path: 'admin/books', component: AdminBooksComponent, canActivate: [authGuard], data: { allowedRoles: ['ROLE_ADMIN'] } },
+  { path: 'admin/books', component: AdminBooksComponent, canActivate: [authGuard], data: { allowedRoles: ['ROLE_ADMIN'] }},
 ];
 
 @NgModule({
