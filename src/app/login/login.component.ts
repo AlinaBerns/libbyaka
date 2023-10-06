@@ -39,9 +39,17 @@ export class LogInComponent {
           localStorage.setItem('authToken', accessToken);
           // Store roles as a JSON string -> to retrive it, use const roles = JSON.parse(localStorage.getItem('roles'))
           localStorage.setItem('roles', JSON.stringify(roles));  
-          // Navigate to HomeComponent
-          this.router.navigate(['/user/home']);
-
+          // Navigate to HomeComponent for users and AdminUsersComponent for admins
+          switch (roles[0]) {
+            case 'ROLE_USER':
+              this.router.navigate(['/user/home']);
+              break;
+            case 'ROLE_ADMIN':
+              this.router.navigate(['/admin/users']);
+              break;
+            default:
+              console.error('Invalid role:', roles[0]);
+          }
         } else {
           console.error('No accessToken received');
         }
