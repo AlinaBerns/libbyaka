@@ -1,0 +1,266 @@
+section {
+    border: none;
+    margin: 0%;
+    padding: 0%;
+    outline: none;
+    background-image: url(/assets/background_img6.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    height: 1500px;
+    position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+  }
+  
+  /* .aa { */
+  /* width: auto; */
+  /* height: 60px; */
+  /* flex-shrink: 0; */
+  /* background: rgba(0, 28, 16, 0.413); */
+  
+  /* } */
+  section > div > div > button {
+    margin-top: 25px;
+    width: 400px;
+    height: 35px;
+    background: rgba(0, 0, 0, 0.758);
+    color: #ffffffae;
+    text-align: center;
+    text-shadow: rgba(255, 255, 0, 0.041);
+    font-family: Kaisei Decol;
+    font-size: 15px;
+    margin-left: 283px;
+    border: 1px solid grey;
+    transition: 1s;
+  }
+  .buttonHome{
+    margin-top: 18px;
+    width: 220px;
+    height: 35px;
+    background: rgb(0, 0, 0);
+    color: #ffffffae;
+    text-align: center;
+    text-shadow: rgba(255, 255, 0, 0.041);
+    font-family: Kaisei Decol;
+    font-size: 15px;
+    margin-left: 647px;
+    border: 1px solid grey;
+    transition: 1s;
+  }
+  section > div > div > button:hover {
+    transition: 1s;
+    color: white;
+    background: rgb(3, 3, 3);
+  }
+  .buttonHome:hover{
+    transition: 1s;
+    color: white;
+    background: rgb(3, 3, 3);
+  }
+  .block {
+    width: 1519px;
+    height: 1500px;
+    background: rgba(0, 28, 16, 0.356);
+    float: left;
+    border: 1px solid grey;
+    animation: ani 2.5s forwards;
+  }
+  .text1 {
+    color: #d7d7d7;
+    text-align: center;
+    font-family: Kaisei Decol;
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 17px; /* 24.286% */
+    padding-top: 100px;
+    
+    animation: ch-color 3s infinite;
+  }
+  .text2 {
+    flex-shrink: 0;
+    color: #d7d7d7;
+    text-align: center;
+    font-family: Kameron;
+    font-size: 40px;
+    padding-top: 25px;
+    text-shadow: 0px 4px 4px rgba(229, 255, 0, 0.304);
+    padding-left: 0px;
+  }
+  .text0 {
+    flex-shrink: 0;
+    color: #d7d7d7a9;
+    text-align: center;
+    
+    
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-family: Kameron;
+    font-size: 30px;
+    padding-top: 30px;
+    
+    text-shadow: 0px 4px 4px rgba(229, 255, 0, 0.361);
+  }
+  .text01 {
+    flex-shrink: 0;
+    color: #d7d7d7bb;
+    text-align: left;
+    text-shadow: 0px 4px 4px rgba(238, 255, 0, 0.25);
+    font-family: Kameron;
+    font-size: 25px;
+    padding-top: 110px;
+    padding-left: 120px;
+  }
+  
+  .text3 {
+    flex-shrink: 0;
+    color: #d7d7d7c5;
+    text-align: left;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-family: Kameron;
+    font-size: 25px;
+    padding-top: 20px;
+    margin-left: 20px;
+    animation: ch-color 3s infinite;
+  }
+  .text4 {
+    color: #fefdfd94;
+    text-align: center;
+    font-family: Kaisei HarunoUmi;
+    font-size: 20px;
+    padding-top: 950px;
+    font-style: italic;
+  }
+  .text5 {
+    color: #fefdfd94;
+    text-align: center;
+    font-family: Kaisei HarunoUmi;
+    font-size: 30px;
+    padding-top: 40px;
+    text-shadow: 0px 4px 4px rgba(255, 191, 0, 0.452);
+  }
+  .text6 {
+    color: #fefdfdf0;
+    text-align: center;
+    font-family: Kaisei HarunoUmi;
+    font-size: 60px;
+    padding-top: 10px;
+    animation: ch-color 3s infinite;
+  }
+  .text7 {
+    color: #fefdfd8f;
+    text-align: center;
+    font-family: Kaisei HarunoUmi;
+    font-size: 40px;
+    padding-top: 10px;
+    text-shadow: 0px 4px 4px rgba(255, 179, 0, 0.452);
+  }
+  
+  .divin {
+    display: inline-block;
+    position: absolute;
+  }
+  ul > li > a {
+    display: inline-block;
+    color: #ffffffc3;
+    text-align: center;
+    font-family: Kaisei Decol;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+  ul > li {
+    display: inline-block;
+    text-align: right;
+    margin-right: 190px;
+    margin-left: 135px;
+    
+  }
+  input {
+    width: 700px;
+    height: 30px;
+    flex-shrink: 0;
+    border-radius: 20px;
+    background: rgba(217, 217, 217, 0.304);
+    margin-top: 30px;
+    margin-left: 130px;
+    color: #f9f7f7c6;
+    text-align: center;
+    font-size: large;
+    font-family: Kaisei Decol;
+  }
+  input::-webkit-input-placeholder {
+    color: rgba(243, 238, 238, 0.66);
+    opacity: 70%;
+    text-align: center;
+    font-size: large;
+    font-family: Kaisei Decol;
+  }
+  
+  .box {
+    width: 1000px;
+    height: 850px;
+    background: rgba(0, 0, 0, 0.687);
+    
+    position:absolute;
+    margin-top: 100px;
+    margin-left: 280px;
+    transition: 1s;
+    border: 1px solid grey;
+  }
+  
+  .box:hover {
+    background: rgba(0, 0, 0, 0.797);
+    border-radius: 4px;
+    color: rgba(198, 199, 187, 0.696);
+  }
+  @keyframes ch-color {
+    0% {
+      text-shadow: 0px 4px 4px rgba(255, 204, 0, 0.418);
+    }
+    25% {
+      text-shadow: 0px 4px 4px rgba(255, 216, 45, 0.854);
+    }
+    50% {
+      text-shadow: 0px 4px 4px rgba(255, 213, 0, 0.555);
+    }
+    75% {
+      text-shadow: 0px 4px 4px rgba(255, 225, 103, 0.897);
+    }
+    100% {
+      text-shadow: 0px 4px 4px rgba(255, 200, 0, 0.452);
+   
+      
+    }
+  }
+  @keyframes ani {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  .grey-image {
+    filter: grayscale(1);
+    transition: 1s;
+    height: 400px;
+    width: 270px;
+  }
+  .grey-image:hover {
+    filter: grayscale(0);
+    height: 410px;
+    width: 280px;
+  }
+  
+  .img1 {
+    margin-top: 70px;
+    margin-left: 300px;
+    opacity: 0;
+    animation: ani 2.5s forwards;
+  }
+  .divin {
+    display: inline-block;
+    position: absolute;
+  }

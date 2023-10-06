@@ -75,6 +75,7 @@ body {
   margin-top: 10px;
   margin-right: 10px;
   border: 1px solid grey;
+  transition: 1s;
 }
 .button3 {
   margin-top: 8px;
@@ -89,6 +90,7 @@ body {
   margin-top: 40px;
   margin-left: 500px;
   border: 1px solid grey;
+  transition: 1s;
 }
 .button01 {
   margin-top: 8px;
@@ -103,6 +105,7 @@ body {
   margin-top: 40px;
   margin-left: 475px;
   border: 1px solid grey;
+  transition: 1s;
 }
 
 .button01:hover{
