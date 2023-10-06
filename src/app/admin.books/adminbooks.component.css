@@ -265,3 +265,25 @@ form {
   text-align: center;
   margin-top: 50px;
 }
+ul > li > a {
+  display: inline-block;
+  color: #ffffffc3;
+  text-align: right;
+  font-family: Kaisei Decol;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-top: 970px;
+  margin-left: 270px;
+  
+}
+
+ul>li>a:hover{
+  color: #ffffff;
+}
+ul > li {
+  display: inline-block;
+  text-align: right;
+}
+
