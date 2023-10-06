@@ -13,7 +13,7 @@ export const authGuard: CanActivateFn = (route: ActivatedRouteSnapshot, state: R
   const allowedRoles = route.data['allowedRoles'] as Array<string>;
 
   // Special handling for login page
-  if (route.routeConfig && route.routeConfig.path === '') {
+  if (route.routeConfig && (route.routeConfig.path === '' || route.routeConfig.path === 'registration' || route.routeConfig.path === 'login')) {
     const userRole = getUserRole();
     
     if (userRole) {
