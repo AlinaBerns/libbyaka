@@ -6,6 +6,7 @@ import { LogInComponent } from './login/login.component';
 import { HomeComponent } from './user.home/home.component';
 import { AdminUsersComponent } from './admin.users/adminusers.component';
 import { AdminBooksComponent } from './admin.books/adminbooks.component';
+import { authGuard } from './security/auth.guard';
 
 const routes: Routes = [
   { path: '', component: LogInComponent },
@@ -18,11 +19,9 @@ const routes: Routes = [
     path: 'user/account',
     component: UserAccountComponent,
   },
-  { path: 'user/home', component: HomeComponent },
+  { path: 'user/home', component: HomeComponent, canActivate: [authGuard], data: { allowedRoles: ['ROLE_USER', 'ROLE_MODERATOR', 'ROLE_ADMIN'] } },
   { path:'admin/users', component: AdminUsersComponent},
   { path: 'admin/books', component: AdminBooksComponent},
-  
-  
 ];
 
 @NgModule({

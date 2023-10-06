@@ -40,7 +40,7 @@ export class LogInComponent {
           // Store roles as a JSON string -> to retrive it, use const roles = JSON.parse(localStorage.getItem('roles'))
           localStorage.setItem('roles', JSON.stringify(roles));  
           // Navigate to HomeComponent
-          this.router.navigate(['/home']);
+          this.router.navigate(['/user/home']);
 
         } else {
           console.error('No accessToken received');
