@@ -141,6 +141,7 @@ div.fixed-block {
   font-size: 15px;
   margin-left: 10px;
   border: 1px solid grey;
+  transition: 1s;
 }
 .button0:hover {
   transition: 1s;
@@ -198,6 +199,7 @@ transition: 1s;;
   width: 80px;
   height: 30px;
   border: 1px solid grey;
+  transition: 1s;
 }
 
 .button4:hover {

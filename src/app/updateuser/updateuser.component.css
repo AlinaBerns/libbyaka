@@ -1,0 +1,274 @@
+body {
+    margin: auto;
+    outline: none;
+    background-image: url(/assets/background_img6.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    height: 1000px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+  }
+  
+  
+  .block {
+    width: 400px;
+    height: 210px;
+    background-color: rgba(0, 0, 0, 0.749);
+    top: 0;
+    
+    border: 1px solid rgba(255, 255, 255, 0.664);
+    display: inline-block;
+   position: fixed;
+    animation: ani 2.5s forwards;
+  
+  }
+  .block2 {
+    width: 1097px;
+    height: 970px;
+    background-color: rgba(0, 0, 0, 0.872);
+    margin-left: 420px;
+    border: 1px solid rgba(255, 255, 255, 0.664);
+    display: inline-block;
+    animation: ani 2.5s forwards;
+  }
+  .block3 {
+    width: 400px;
+    height: 450px;
+    background-color: rgba(0, 0, 0, 0);
+  
+    margin-left: 50px;
+    display: inline-block;
+    position: fixed;
+    margin-top: 210px;
+    animation: ani 2.5s forwards;
+  
+  }
+  .text1 {
+    font-size: 20px;
+    color: rgba(255, 255, 255, 0.575);
+    font-family: Kaisei Decol;
+    text-align: center;
+    margin-top: 20px;
+  }
+  .text2 {
+    font-size: 25px;
+    color: rgba(255, 255, 255, 0.575);
+    font-family: Kaisei Decol;
+    text-align: center;
+    margin-top: 50px;
+    
+    animation: ch-color 3s infinite;
+  }
+  .button2 {
+    margin-top: 8px;
+    width: 110px;
+    height: 35px;
+    background: rgba(0, 0, 0, 0.461);
+    color: #ffffffae;
+    text-align: center;
+    text-shadow: rgba(255, 255, 0, 0.041);
+    font-family: Kaisei Decol;
+    font-size: 15px;
+    float: right;
+    margin-top: 10px;
+    margin-right: 10px;
+    border: 1px solid grey;
+    transition: 1s;
+  }
+  .button3 {
+    margin-top: 8px;
+    width: 100px;
+    height: 35px;
+    background: rgba(0, 0, 0, 0.461);
+    color: #ffffffae;
+    text-align: center;
+    text-shadow: rgba(255, 255, 0, 0.041);
+    font-family: Kaisei Decol;
+    font-size: 15px;
+    margin-top: 40px;
+    margin-left: 500px;
+    border: 1px solid grey;
+    transition: 1s;
+  }
+  .button01 {
+    margin-top: 8px;
+    width: 150px;
+    height: 35px;
+    background: rgba(192, 7, 7, 0.461);
+    color: #ffffffae;
+    text-align: center;
+    text-shadow: rgba(255, 255, 0, 0.041);
+    font-family: Kaisei Decol;
+    font-size: 15px;
+    margin-top: 40px;
+    margin-left: 475px;
+    border: 1px solid grey;
+    transition: 1s;
+  }
+  
+  .button01:hover{
+    background: rgba(192, 7, 7, 0.719);
+    color: #ffffff;
+  }
+  table {
+    position: fixed;
+   margin-left: -50px;
+    text-align: center;
+    width: 390px;
+    height: 320px;
+    font-family: Kaisei Decol;
+    border-collapse: collapse;
+    background: #11111100 !important;
+    color: #f8f8f8;
+    border-radius: 0%;
+    opacity: 0;
+    animation: ani 2.5s forwards;
+  }
+  input {
+    width: 700px;
+    height: 30px;
+    flex-shrink: 0;
+    border-radius: 20px;
+    background: rgba(217, 217, 217, 0.304);
+    margin-top: 30px;
+    margin-left: 200px;
+    color: #f9f7f7c6;
+    text-align: center;
+    font-size: large;
+    font-family: Kaisei Decol;
+  }
+  input::-webkit-input-placeholder {
+    color: rgba(243, 238, 238, 0.66);
+    opacity: 70%;
+    text-align: center;
+    font-size: large;
+    font-family: Kaisei Decol;
+  }
+  
+  table th {
+    height: 5px;
+    width: 200px;
+  }
+  
+  .tableCaption {
+    color: rgba(255, 255, 255, 0.562);
+    font-size: 17px;
+    text-align: center;
+    font-weight: bold;
+    margin-top: 50px;
+  }
+  table tr {
+    height: 50px;
+    font-size: 17px;
+    text-align: center;
+  }
+  table tr:nth-child(even) {
+    background: #2d2d2d82 !important;
+  }
+  table tr:nth-child(even):hover {
+    background: #b0b0b089 !important;
+  }
+  table tr:hover {
+    background: #b0b0b089 !important;
+  }
+  
+  button:hover {
+    transition: 1s;
+    color: white;
+    background: rgb(3, 3, 3);
+  }
+  
+  @keyframes ch-color {
+    0% {
+      text-shadow: 0px 4px 4px rgba(255, 204, 0, 0.418);
+    }
+    25% {
+      text-shadow: 0px 4px 4px rgba(255, 216, 45, 0.854);
+    }
+    50% {
+      text-shadow: 0px 4px 4px rgba(255, 213, 0, 0.555);
+    }
+    75% {
+      text-shadow: 0px 4px 4px rgba(255, 225, 103, 0.897);
+    }
+    100% {
+      text-shadow: 0px 4px 4px rgba(255, 200, 0, 0.452);
+    }
+  }
+  @keyframes ani {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  div.scroll {
+    width: 100%;
+    height: 100%;
+  
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow-y: scroll;
+    background-color: rgba(0, 0, 0, 0.708);
+  }
+  div.fixed-block {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    z-index: 2;
+    top: 20px;
+    right: 20px;
+  }
+  div.container2 {
+    width: 400px;
+    height: 495px;
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.416);
+    border: 1px solid rgba(255, 255, 255, 0.664);
+    opacity: 0;
+    animation: ani 2.5s forwards;
+    border-radius: 0%;
+    
+  }
+  .imgBorrowedBook {
+    margin-top: 10px;
+    margin-left: 10px;
+    width: 50px;
+    height: 70px;
+  }
+  .userText2 {
+    font-size: 20px;
+    color: rgba(255, 255, 255, 0.571);
+    font-family: Kaisei Decol;
+    text-align: center;
+    font-weight: bold;
+    word-break: break-all;
+    margin-top: 100px;
+  }
+  ul > li > a {
+    display: inline-block;
+    color: #ffffffc3;
+    text-align: right;
+    font-family: Kaisei Decol;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+  
+  ul>li>a:hover{
+    color: #ffffff;
+  }
+  ul > li {
+    display: inline-block;
+    text-align: right;
+    margin-right: 200px;
+    
+    margin-top: 5px;
+  }
+  
+  

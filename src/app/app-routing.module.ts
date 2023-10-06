@@ -7,6 +7,8 @@ import { HomeComponent } from './user.home/home.component';
 import { AdminHomeComponent } from './admin.home/admin.home.component';
 import { AdminBooksComponent } from './admin.books/adminbooks.component';
 import { AdminUsersComponent } from './admin.users/admin.users.component';
+import { UpdateuserComponent } from './updateuser/updateuser.component';
+import { UpdatebookComponent } from './updatebook/updatebook.component';
 
 const routes: Routes = [
   { path: '', component: LogInComponent },
@@ -23,6 +25,8 @@ const routes: Routes = [
   { path: 'admin/home', component: AdminHomeComponent },
   { path: 'admin/books', component: AdminBooksComponent },
   { path: 'admin/users', component: AdminUsersComponent },
+  {path: 'updateuser', component:UpdateuserComponent},
+  {path: 'updatebook', component:UpdatebookComponent}
 ];
 
 @NgModule({

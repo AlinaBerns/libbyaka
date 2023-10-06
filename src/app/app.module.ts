@@ -13,6 +13,8 @@ import { ModalOutletComponent } from './modal-outlet/modal-outlet.component';
 import { PortalDirective } from './portal.directive';
 import { AdminBooksComponent } from './admin.books/adminbooks.component';
 import { AdminUsersComponent } from './admin.users/admin.users.component';
+import { UpdateuserComponent } from './updateuser/updateuser.component';
+import { UpdatebookComponent } from './updatebook/updatebook.component';
 
 @NgModule({
   declarations: [
@@ -26,6 +28,8 @@ import { AdminUsersComponent } from './admin.users/admin.users.component';
     PortalDirective,
     AdminBooksComponent,
     AdminUsersComponent,
+    UpdateuserComponent,
+    UpdatebookComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, FormsModule],
   providers: [],
