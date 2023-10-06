@@ -12,6 +12,7 @@ import { FormsModule } from '@angular/forms';
 import { ModalOutletComponent } from './modal-outlet/modal-outlet.component';
 import { PortalDirective } from './portal.directive';
 import { AdminBooksComponent } from './admin.books/adminbooks.component';
+import { AdminUsers2Component } from './admin.users2/admin.users2.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { AdminBooksComponent } from './admin.books/adminbooks.component';
     AdminUsersComponent,
     ModalOutletComponent,
     PortalDirective,
-    AdminBooksComponent
+    AdminBooksComponent,
+    AdminUsers2Component
   ],
   imports: [
     BrowserModule,
