@@ -138,7 +138,7 @@ div.fixed-block {
   text-shadow: rgba(255, 255, 0, 0.041);
   font-family: Kaisei Decol;
   font-size: 15px;
-  margin-left: 35px;
+  margin-left: 10px;
   border: 1px solid grey;
 }
 .button0:hover {
@@ -227,7 +227,7 @@ input:-ms-input-placeholder {
 }
 form {
   margin-top: 10px;
-  margin-left: 300px;
+  margin-left: 250px;
   height: 30px;
 }
 .available {

@@ -7,12 +7,12 @@ import { LogInComponent } from './login/login.component';
 import { HomeComponent } from './user.home/home.component';
 import { UserAccountComponent } from './user.account/useraccount.component';
 import { RegistrationComponent } from './registration/registration.component';
-import { AdminUsersComponent } from './admin.users/adminusers.component';
+import { AdminHomeComponent } from './admin.home/admin.home.component';
 import { FormsModule } from '@angular/forms';
 import { ModalOutletComponent } from './modal-outlet/modal-outlet.component';
 import { PortalDirective } from './portal.directive';
 import { AdminBooksComponent } from './admin.books/adminbooks.component';
-import { AdminUsers2Component } from './admin.users2/admin.users2.component';
+import { AdminUsersComponent } from './admin.users/admin.users.component';
 
 @NgModule({
   declarations: [
@@ -21,18 +21,14 @@ import { AdminUsers2Component } from './admin.users2/admin.users2.component';
     HomeComponent,
     UserAccountComponent,
     RegistrationComponent,
-    AdminUsersComponent,
+    AdminHomeComponent,
     ModalOutletComponent,
     PortalDirective,
     AdminBooksComponent,
-    AdminUsers2Component
+    AdminUsersComponent,
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    FormsModule
-  ],
+  imports: [BrowserModule, AppRoutingModule, FormsModule],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
