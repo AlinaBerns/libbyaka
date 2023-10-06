@@ -15,7 +15,7 @@ body {
     width: auto;
     height: 60px;
     background-color: rgb(0, 0, 0);
-    border: 3px solid rgba(128, 128, 128, 0.306);
+    border: 1px solid rgba(255, 255, 255, 0.505);
     position: fixed;
     z-index: 100;
     top: 0;
@@ -36,11 +36,11 @@ body {
   }
   div.container {
     width: 1000px;
-    height: 450px;
+    height: 530px;
     position: fixed;
   
     background-color: rgba(0, 0, 0, 0.416);
-    border: 3px solid rgba(128, 128, 128, 0.388);
+    border: 1px solid rgba(255, 255, 255, 0.505);
     opacity: 0;
     animation: ani 2.5s forwards;
   }
@@ -69,14 +69,15 @@ body {
     border: 1px solid grey;
   }
   .table th {
-    text-align: right;
+    text-align: center;
     font-weight: bold;
     padding: 7px;
     background: #000000c0;
     border: none;
     font-size: 15px;
     font-family: Kaisei Decol;
-    width: 700px;
+    
+    
   }
   .table td {
     padding: 7px;
@@ -84,8 +85,11 @@ body {
     font-size: 19px;
     font-family: Kaisei Decol;
     color: #f8f8f8e4;
-    width: 500px;
-    text-align: left;
+    text-align: center;
+    
+  }
+  tr{
+    width: 1000px;
   }
   @keyframes ani {
     0% {
@@ -124,9 +128,11 @@ body {
   }
   .buttonsBook {
     height: 50px;
+    transition: 1s;
   }
   .buttonsBook2 {
     height: 20px;
+    transition: 1s;
   }
   .button0 {
     margin-top: 8px;
@@ -138,8 +144,9 @@ body {
     text-shadow: rgba(255, 255, 0, 0.041);
     font-family: Kaisei Decol;
     font-size: 15px;
-    margin-left: 35px;
+    margin-left: 10px;
     border: 1px solid grey;
+    transition: 1s;
   }
   .button0:hover {
     transition: 1s;
@@ -157,8 +164,44 @@ body {
     text-shadow: rgba(255, 255, 0, 0.041);
     font-family: Kaisei Decol;
     font-size: 15px;
-  
+    transition: 1s;
     border: 1px solid grey;
+  }
+
+  .buttonUser1 {
+    margin-top: 8px;
+    width: 100px;
+    height: 30px;
+    background: rgb(154, 0, 0);
+    color: #ffffffae;
+    text-align: center;
+    text-shadow: rgba(255, 255, 0, 0.041);
+    font-family: Kaisei Decol;
+    font-size: 15px;
+    
+    border: 1px solid grey;
+    transition: 1s;
+  }
+  .buttonUser1:hover{
+    background: rgb(193, 0, 0);
+    color: #fffffffd;
+  }
+  .buttonUser2 {
+    margin-top: 8px;
+    width: 100px;
+    height: 30px;
+    background: rgb(3, 0, 154);
+    color: #ffffffae;
+    text-align: center;
+    text-shadow: rgba(255, 255, 0, 0.041);
+    font-family: Kaisei Decol;
+    font-size: 15px;
+    border: 1px solid grey;
+    transition: 1s;
+  }
+  .buttonUser2:hover{
+    background: rgb(3, 0, 203);
+    color: #ffffff;
   }
   .button1:hover {
     transition: 1s;
@@ -175,6 +218,7 @@ body {
     width: 80px;
     height: 30px;
     border: 1px solid grey;
+    transition: 1s;
   }
   
   .button4:hover {
@@ -227,7 +271,7 @@ body {
   }
   form {
     margin-top: 10px;
-    margin-left: 300px;
+    margin-left: 250px;
     height: 30px;
   }
   .available {
