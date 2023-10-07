@@ -35,7 +35,6 @@ export const authGuard: CanActivateFn = (route: ActivatedRouteSnapshot, state: R
     return true;
   } else {
     // Navigate to a default route if the user doesn't have the necessary permissions
-    alert('You do not have permission to access this page, redirecting to log in page)');
     router.navigate(['']);
     return false;
   }

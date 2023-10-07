@@ -112,6 +112,8 @@
     <p class="userText2">BORROWED BOOKS</p>
   </div>
 
+  
+
   <table>
     <div class="container2">
       <div class="fixed-block"></div>
@@ -119,12 +121,12 @@
         <th style="width: 100px"></th>
         <th style="width: 200px;"></th>
         <th style="width: 200px;"></th>
-        <tr>
+        <tr *ngFor="let book of books">
           <td>
             <img src="/assets/book1.jpg" alt="" class="imgBorrowedBook" />
           </td>
-          <td>Stephen King</td>
-          <td>"Revival"</td>
+          <td>test</td>
+          <td>{{book.title}}</td>
         </tr>
         <tr>
           <td>
