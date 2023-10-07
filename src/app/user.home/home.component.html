@@ -2,7 +2,7 @@
 <body>
   <div class="bar">
     <button class="button1">
-      CART
+CART
       <ul class="submenu">
         <table class="table2">
           <div class="container3">
@@ -12,20 +12,9 @@
               <th style="width: 300px;"></th>
               <th style="width: 50px;"></th>
               <th style="width: 50px;"></th>
-              <tr>
-                <td>Stephen King <br> "Revival"</td>
-                <td>(3)</td>
-                <td><div>
-                  <input
-                    id="highload0"
-                    class="checkbox-custom"
-                    name="highload0"
-                    type="checkbox"
-                    style="height: 20px; width: 20px"
-                  />
-                  <label for="highload0" class="checkbox-custom-label"></label>
-                </div></td>
-              </tr>
+
+        <!--CART SUBMENU-->
+
               <tr>
                 <td>Stephen King <br> "The Outsider"</td>
                 <td>(2)</td>
@@ -41,49 +30,6 @@
                 </div></td>
               </tr>
               <tr>
-                
-                <td>Edgar Allan Poe <br>"The Raven"</td>
-                <td>(1)</td>
-                <td><div>
-                  <input
-                    id="highload0"
-                    class="checkbox-custom"
-                    name="highload0"
-                    type="checkbox"
-                    style="height: 20px; width: 20px"
-                  />
-                  <label for="highload0" class="checkbox-custom-label"></label>
-                </div></td>
-              </tr>
-              <tr>
-                <td>Daniel Keyes <br>"The Minds Of Billy Milligan"</td>
-                <td>(1)</td>
-                <td><div>
-                  <input
-                    id="highload0"
-                    class="checkbox-custom"
-                    name="highload0"
-                    type="checkbox"
-                    style="height: 20px; width: 20px"
-                  />
-                  <label for="highload0" class="checkbox-custom-label"></label>
-                </div></td>
-              </tr>
-              <tr>
-                <td>Stephen King <br>"Carrie"</td>
-                <td>(1)</td>
-                <td><div>
-                  <input
-                    id="highload0"
-                    class="checkbox-custom"
-                    name="highload0"
-                    type="checkbox"
-                    style="height: 20px; width: 20px"
-                  />
-                  <label for="highload0" class="checkbox-custom-label"></label>
-                </div></td>
-              </tr>
-              
             </div>
           </div>
         </table>
@@ -92,6 +38,7 @@
         <button class="button3">CLEAR CART</button>
       </ul>
     </button>
+    
     <form action="" method="get">
       <input name="s" placeholder="SEARCH HERE..." type="search" />
       <button type="submit" class="button4">SEARCH</button>
@@ -100,19 +47,18 @@
       ><img src="/assets/exit.png" alt="" style="width: 50px; height: 50px"
     /></a>
   </div>
+
   <div class="block">
-    <div class="avatar online" style="margin-top: 100px; margin-left: 145px">
+    <div class="avatar" style="margin-top: 100px; margin-left: 145px">
       <div class="w-24 rounded-full">
         <img src="/assets/userPhoto.jpg" />
       </div>
     </div>
-    <p class="userText">User1</p>
+    <p class="userText">{{getUserName()}}</p>
     <p class="userText">user1snooppi@gmail.com</p>
     <button class="button2" routerLink="/user/account">EDIT PROFILE</button>
     <p class="userText2">BORROWED BOOKS</p>
   </div>
-
-  
 
   <table>
     <div class="container2">
@@ -121,230 +67,52 @@
         <th style="width: 100px"></th>
         <th style="width: 200px;"></th>
         <th style="width: 200px;"></th>
-        <tr *ngFor="let book of books">
+        <tr>
+          <td>image</td>
+          <td>title</td>
+          <td>author</td>
+          <td>date of return</td>
+        </tr>
+        <tr *ngFor="let bbook of borrowedBooks">
           <td>
             <img src="/assets/book1.jpg" alt="" class="imgBorrowedBook" />
           </td>
-          <td>test</td>
-          <td>{{book.title}}</td>
-        </tr>
-        <tr>
-          <td>
-            <img src="/assets/book5.jpg" alt="" class="imgBorrowedBook" />
-          </td>
-          <td>Stephen King</td>
-          <td>"The Outsider"</td>
-        </tr>
-        <tr>
-          <td>
-            <img src="/assets/book14.jpg" alt="" class="imgBorrowedBook" />
-          </td>
-          <td>Edgar Allan Poe</td>
-          <td>"The Raven"</td>
-        </tr>
-        <tr>
-          <td>
-            <img src="/assets/book20.jpg" alt="" class="imgBorrowedBook" />
-          </td>
-          <td>Daniel Keyes</td>
-          <td>"The Minds Of Billy Milligan"</td>
-        </tr>
-        <tr>
-          <td>
-            <img src="/assets/book21.jpg" alt="" class="imgBorrowedBook" />
-          </td>
-          <td>Stephen King</td>
-          <td>"Carrie"</td>
+          <td>{{bbook.book.title}}</td>
+          <td>{{bbook.book.author.name}}</td>
+          <td>{{bbook.dateOfReturn}}</td>
         </tr>
       </div>
     </div>
   </table>
+
+
   <div class="container">
     <div class="fixed-block"></div>
     <div class="scroll">
-      <div id="line_block" class="hover-image-scale">
+      <div id="line_block" class="hover-image-scale" *ngFor="let book of books">
         <img src="/assets/book1.jpg" alt="" class="imgBook" />
-        <span class="available">available</span>
-        <p class="img__description">
-          REVIVAL <br /><br />November 11, 2014 <br /><br />Stephen King <br />
-          <br />
-
-          <button class="button5">ADD TO CART</button>
+        <span class="available">{{book.status}}</span>
+        <div class="img__description">
+        <p>
+          {{book.title}}  <br /> 
+          by {{book.author.name}}<br />
         </p>
-      </div>
 
-      <div id="line_block" class="hover-image-scale">
-        <img src="/assets/book4.jpg" alt="" class="imgBook" />
-        <span class="reserved">unavailable</span>
-        <p class="img__description">
-          description <br />
+        <div >
+          <button class="btn btn-xs text-x">description</button>
+        </div>
 
+        <div>
           <button class="button5">ADD TO CART</button>
-        </p>
-      </div>
-      <div id="line_block" class="hover-image-scale">
-        <img src="/assets/book5.jpg" alt="" class="imgBook" />
-        <span class="available">available</span>
-        <p class="img__description">
-          description <br />
-          <button class="button5">ADD TO CART</button>
-        </p>
-      </div>
-
-      <div id="line_block" class="hover-image-scale">
-        <img src="/assets/book6.jpg" alt="" class="imgBook" />
-        <span class="available">available</span>
-        <p class="img__description">
-          description <br />
-          <button class="button5">ADD TO CART</button>
-        </p>
-      </div>
-      <div id="line_block" class="hover-image-scale">
-        <img src="/assets/book7.jpg" alt="" class="imgBook" />
-        <span class="available">available</span>
-        <p class="img__description">
-          description <br />
-          <button class="button5">ADD TO CART</button>
-        </p>
-      </div>
-      <div id="line_block" class="hover-image-scale">
-        <img src="/assets/book8.jpg" alt="" class="imgBook" />
-        <span class="available">available</span>
-        <p class="img__description">
-          description <br />
-          <button class="button5">ADD TO CART</button>
-        </p>
-      </div>
-
-      <div id="line_block" class="hover-image-scale">
-        <img src="/assets/book2.jpg" alt="" class="imgBook" />
-        <span class="available">available</span>
-        <p class="img__description">
-          description <br />
-
-          <button class="button5">ADD TO CART</button>
-        </p>
-      </div>
-      <div id="line_block" class="hover-image-scale">
-        <img src="/assets/book9.jpg" alt="" class="imgBook" />
-        <span class="available">available</span>
-        <p class="img__description">
-          description <br />
-
-          <button class="button5">ADD TO CART</button>
-        </p>
-      </div>
-      <div id="line_block" class="hover-image-scale">
-        <img src="/assets/book10.jpg" alt="" class="imgBook" />
-        <span class="available">available</span>
-        <p class="img__description">
-          description <br />
-
-          <button class="button5">ADD TO CART</button>
-        </p>
-      </div>
-
-      <div id="line_block" class="hover-image-scale">
-        <img src="/assets/book11.jpg" alt="" class="imgBook" />
-        <span class="available">available</span>
-        <p class="img__description">
-          description <br />
-
-          <button class="button5">ADD TO CART</button>
-        </p>
-      </div>
-      <div id="line_block" class="hover-image-scale">
-        <img src="/assets/book12.jpg" alt="" class="imgBook" />
-        <span class="available">available</span>
-        <p class="img__description">
-          description <br />
-
-          <button class="button5">ADD TO CART</button>
-        </p>
-      </div>
-      <div id="line_block" class="hover-image-scale">
-        <img src="/assets/book3.jpg" alt="" class="imgBook" />
-        <span class="available">available</span>
-        <p class="img__description">
-          description <br />
-
-          <button class="button5">ADD TO CART</button>
-        </p>
-      </div>
-      <div id="line_block" class="hover-image-scale">
-        <img src="/assets/book14.jpg" alt="" class="imgBook" />
-        <span class="available">available</span>
-        <p class="img__description">
-          description <br />
-
-          <button class="button5">ADD TO CART</button>
-        </p>
-      </div>
-      <div id="line_block" class="hover-image-scale">
-        <img src="/assets/book15.jpg" alt="" class="imgBook" />
-        <span class="available">available</span>
-        <p class="img__description">
-          description <br />
-
-          <button class="button5">ADD TO CART</button>
-        </p>
-      </div>
-      <div id="line_block" class="hover-image-scale">
-        <img src="/assets/book16.png" alt="" class="imgBook" />
-        <span class="available">available</span>
-        <p class="img__description">
-          description <br />
-
-          <button class="button5">ADD TO CART</button>
-        </p>
-      </div>
-      <div id="line_block" class="hover-image-scale">
-        <img src="/assets/book17.jpg" alt="" class="imgBook" />
-        <span class="available">available</span>
-        <p class="img__description">
-          description <br />
-
-          <button class="button5">ADD TO CART</button>
-        </p>
-      </div>
-      <div id="line_block" class="hover-image-scale">
-        <img src="/assets/book18.jpg" alt="" class="imgBook" />
-        <span class="available">available</span>
-        <p class="img__description">
-          description <br />
-
-          <button class="button5">ADD TO CART</button>
-        </p>
-      </div>
-      <div id="line_block" class="hover-image-scale">
-        <img src="/assets/book19.jpg" alt="" class="imgBook" />
-        <span class="available">available</span>
-        <p class="img__description">
-          description <br />
-
-          <button class="button5">ADD TO CART</button>
-        </p>
-      </div>
-      <div id="line_block" class="hover-image-scale">
-        <img src="/assets/book20.jpg" alt="" class="imgBook" />
-        <span class="available">available</span>
-        <p class="img__description">
-          description <br />
-
-          <button class="button5">ADD TO CART</button>
-        </p>
-      </div>
-      <div id="line_block" class="hover-image-scale">
-        <img src="/assets/book21.jpg" alt="" class="imgBook" />
-        <span class="available">available</span>
-        <p class="img__description">
-          description <br />
-
-          <button class="button5">ADD TO CART</button>
-        </p>
+        </div>
+        </div>
       </div>
     </div>
   </div>
+
+
+
+
   <div style="margin-left: 0px;">
     <ul>
       <li><a href="#">Help</a></li>

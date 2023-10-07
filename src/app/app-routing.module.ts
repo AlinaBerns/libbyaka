@@ -28,7 +28,7 @@ const routes: Routes = [
 
   {path: 'updateuser', component:UpdateuserComponent},
   {path: 'updatebook', component:UpdatebookComponent},
-  { path: 'user/home', component: HomeComponent, canActivate: [authGuard], data: { allowedRoles: ['ROLE_USER', 'ROLE_MODERATOR', 'ROLE_ADMIN'] } },
+  { path: 'user/home', component: HomeComponent, canActivate: [authGuard], data: { allowedRoles: ['ROLE_USER'] } },
   { path:'admin/users', component: AdminUsersComponent, canActivate: [authGuard], data: { allowedRoles: ['ROLE_ADMIN'] } },
   { path: 'admin/books', component: AdminBooksComponent, canActivate: [authGuard], data: { allowedRoles: ['ROLE_ADMIN'] }},
 

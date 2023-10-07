@@ -5,7 +5,7 @@ body {
   background-image: url(/assets/background_img6.jpg);
   background-size: cover;
 
-  height: 920px;
+  height: 100%;
   position: absolute;
   top: 0;
   left: 0;
@@ -26,6 +26,7 @@ body {
   opacity: 0;
   animation: ani 2.5s forwards;
 }
+
 div.container {
   width: 1100px;
   height: 610px;
@@ -175,6 +176,7 @@ div.container2 {
   margin-left: 15px;
   margin-top: 50px;
 }
+
 .reserved {
   color: rgb(128, 0, 0);
 
@@ -189,6 +191,7 @@ div.container2 {
   margin-top: 40px;
   margin-left: 20px;
 }
+
 .userText {
   font-size: 20px;
   color: rgba(255, 255, 255, 0.571);
@@ -314,7 +317,7 @@ ul > li {
   background: rgba(0, 0, 0, 0);
   border: 3px solid rgba(128, 128, 128, 0);
   opacity: 0;
-  position: relative;
+ 
 
   width: 470px;
   height: 200px;
@@ -323,6 +326,7 @@ ul > li {
   transform-origin: 0% 0%;
   transition: 0.6s ease-in-out;
 }
+
 .button1:hover .submenu {
   opacity: 1;
   transform: perspective(600px) rotateX(0deg);
