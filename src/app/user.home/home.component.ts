@@ -107,7 +107,6 @@ export class HomeComponent {
     }
 
     if (this.cartService.addToCart(book)) {
-      alert('Book added to cart!');
       return true;
     }
 
@@ -131,7 +130,7 @@ export class HomeComponent {
   bookIsInCart(book: any): boolean {  
     return this.cartService.isBookInCart(book);
   }
-  
+
 
   toggleSelection(book: any): void {
     console.log('Book selected: ', book);
