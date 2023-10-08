@@ -1,43 +1,51 @@
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <body>
   <div class="bar">
-    <button class="button1">
-CART
-      <ul class="submenu">
+    <div class="indicator">
+     <span class="indicator-item badge badge-secondary mt-3.5 mr-1 w-1 bg-slate-900 border-none">{{cartItemCount}}</span> 
+    <button class="button1"> 
+       CART
+       <ul class="submenu">
         <table class="table2">
           <div class="container3">
             <div class="fixed-block"></div>
             <div class="scroll">
-            
+              
               <th style="width: 300px;"></th>
               <th style="width: 50px;"></th>
               <th style="width: 50px;"></th>
-
-        <!--CART SUBMENU-->
-
-              <tr>
-                <td>Stephen King <br> "The Outsider"</td>
-                <td>(2)</td>
-                <td><div>
-                  <input
-                    id="highload0"
-                    class="checkbox-custom"
-                    name="highload0"
+              
+              <!--CART SUBMENU -->
+              
+              <tr *ngFor="let cartBook of cartItems">
+                <td>{{cartBook.title}} <br> "{{cartBook.author.name}}"</td>
+                <td>                 
+                  <div>
+                    <button
+                    id="{{cartBook.id}}"
+                    class="checkbox checkbox-primary rounded-full "
                     type="checkbox"
-                    style="height: 20px; width: 20px"
-                  />
-                  <label for="highload0" class="checkbox-custom-label"></label>
-                </div></td>
+                    style="height: 20px; width: 20px "
+                     
+                    (click)="toggleSelection(cartBook) ">
+                    
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 pl-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                    </svg>    
+                    </button> 
+                    
+                  </div>                                
+                </td>
               </tr>
               <tr>
+              </div>
             </div>
-          </div>
-        </table>
-        <button class="button3">DELETE BOOK(S)</button>
+          </table>
         <button class="button3">RESERVE BOOK(S)</button>
-        <button class="button3">CLEAR CART</button>
+        <button class="button3" (click)="clearCart()">CLEAR CART</button>
       </ul>
     </button>
+  </div>
     
     <form action="" method="get">
       <input type="text" [formControl]="searchControl" (input)="onSearch()" placeholder="Search books..." />
@@ -56,6 +64,7 @@ CART
     </div>
     <p class="userText">{{getUserName()}}</p>
     <p class="userText">user1snooppi@gmail.com</p>
+
     <button class="button2" routerLink="/user/account">EDIT PROFILE</button>
     <p class="userText2">BORROWED BOOKS</p>
   </div>
@@ -98,19 +107,21 @@ CART
           by {{book.author?.name}}<br />
         </p>
 
-        <div >
+        <div class="tooltip tooltip-open tooltip-right" data-tip="hello">
           <button class="btn btn-xs text-x">description</button>
         </div>
-
         <div>
-          <button class="button5">ADD TO CART</button>
+          <button class="button5" *ngIf="book.status === 'AVAILABLE' && cartItemCount < 5 && !bookIsInCart(book)" (click)="addToCart(book)">ADD TO CART</button>
         </div>
+        <div>
+          <button class="button5" *ngIf="bookIsInCart(book)" [disabled]="true">ALREADY IN CARD</button>
+        </div>
+
         </div>
       </div>
     </div>
+    
   </div>
-
-
 
 
   <div style="margin-left: 0px;">

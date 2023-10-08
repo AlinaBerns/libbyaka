@@ -5,6 +5,7 @@ import jwt_decode from 'jwt-decode';
 import { FormControl } from '@angular/forms';
 import { debounceTime, switchMap } from 'rxjs/operators';
 import { ChangeDetectorRef } from '@angular/core';
+import { CartService } from '../services/cartservice/cart.service';
 
 @Component({
   selector: 'app-home',
@@ -13,13 +14,19 @@ import { ChangeDetectorRef } from '@angular/core';
 })
 export class HomeComponent {
 
-  constructor(private authService: AuthService, private bookService: BookService, private cdRef: ChangeDetectorRef ) {}
+  constructor(private authService: AuthService, 
+    private bookService: BookService, 
+    private cdRef: ChangeDetectorRef,
+    private cartService: CartService ) {}
 
   searchControl = new FormControl('');
 
   borrowedBooks: any[] = [];
   
   books: any[] = [];
+
+  selectedBooks: any[] = [];
+
   
   getUserName(): string {
     const token = localStorage.getItem('authToken') || '';
@@ -89,6 +96,61 @@ export class HomeComponent {
 
   searchBooks(query:string){
     this.bookService.searchBooks(query);
+  }
+
+
+  addToCart(book: any): boolean {
+
+    if (this.cartService.isBookInCart(book)) {
+      alert('Book is already in cart!');
+      return false;
+    }
+
+    if (this.cartService.addToCart(book)) {
+      alert('Book added to cart!');
+      return true;
+    }
+
+    alert('Cart is full!');
+    return false;
+  }
+
+  get cartItemCount(): number {
+    return this.cartService.items.length;
+  }
+
+  get cartItems(): any[] {
+    return this.cartService.items;
+  }
+
+  clearCart(): void {
+    localStorage.removeItem('cart');
+    this.cartService.loadCart();
+  }
+
+  bookIsInCart(book: any): boolean {  
+    return this.cartService.isBookInCart(book);
+  }
+  
+
+  toggleSelection(book: any): void {
+    console.log('Book selected: ', book);
+    
+    const index = this.selectedBooks.findIndex(selectedBook => selectedBook.id === book.id);
+    if (index < 0) {
+      this.selectedBooks.push(book);
+    } else {
+      this.selectedBooks.splice(index, 1);
+    }
+
+    this.removeSelectedBooks();
+  }
+
+  removeSelectedBooks(): void {
+    this.cartService.removeSelectedBooks(this.selectedBooks);
+    this.selectedBooks = [];
+    console.log('Selected books after removal: ', this.selectedBooks);
+    
   }
 
 
