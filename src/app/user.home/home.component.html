@@ -40,7 +40,7 @@ CART
     </button>
     
     <form action="" method="get">
-      <input name="s" placeholder="SEARCH HERE..." type="search" />
+      <input type="text" [formControl]="searchControl" (input)="onSearch()" placeholder="Search books..." />
       <button type="submit" class="button4">SEARCH</button>
     </form>
     <a (click)="onLogOutButtonClick()" style="margin-left: 550px"
@@ -95,7 +95,7 @@ CART
         <div class="img__description">
         <p>
           {{book.title}}  <br /> 
-          by {{book.author.name}}<br />
+          by {{book.author?.name}}<br />
         </p>
 
         <div >

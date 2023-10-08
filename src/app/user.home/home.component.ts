@@ -2,6 +2,9 @@ import { Component, Input } from '@angular/core';
 import { AuthService } from '../security/auth.service';
 import { BookService } from '../services/bookservice/book.service';
 import jwt_decode from 'jwt-decode';
+import { FormControl } from '@angular/forms';
+import { debounceTime, switchMap } from 'rxjs/operators';
+import { ChangeDetectorRef } from '@angular/core';
 
 @Component({
   selector: 'app-home',
@@ -10,7 +13,9 @@ import jwt_decode from 'jwt-decode';
 })
 export class HomeComponent {
 
-  constructor(private authService: AuthService, private bookService: BookService ) {}
+  constructor(private authService: AuthService, private bookService: BookService, private cdRef: ChangeDetectorRef ) {}
+
+  searchControl = new FormControl('');
 
   borrowedBooks: any[] = [];
   
@@ -56,4 +61,35 @@ export class HomeComponent {
 
   description: string = "Revival follows Jamie Morton from his boyhood in rural Maine (a familiar setting for King readers), through his young adult years as a drug-addicted guitarist in cover bands, to his mature years running a recording studio. Every time his life takes a dramatic turn, Charles Jacobs is there.";
   
+  onSearch(): void {
+    this.searchControl.valueChanges.pipe(
+      debounceTime(300),  // wait for 300ms pause in typing
+      switchMap(query => {
+        if (query !== null) {
+          console.log('query: ', query);
+          
+          
+          return this.bookService.searchBooks(query);
+        } else {
+          return [];
+        }
+      })
+    ).subscribe({
+      next: data => {
+        this.books = data;
+        console.log('Books: ', this.books);
+        
+        this.cdRef.detectChanges();  // Manually check for changes
+      },
+      error: error => {
+        console.error('There was an error!', error);
+      }
+    });
+  }
+
+  searchBooks(query:string){
+    this.bookService.searchBooks(query);
+  }
+
+
 }

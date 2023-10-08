@@ -78,8 +78,17 @@ export class BookService {
 
    }
 
-
-
-
+   async searchBooks(query: string): Promise<any> {
+    const url = 'http://localhost:8080/api/book';
+    const parameterizedUrl = `${url}/search?query=${query}`;
+  
+    try {
+      const response = await axios.get(parameterizedUrl, this.getConfig());
+      return response.data;
+    } catch (error) {
+      console.error(error);
+      return Promise.reject(error);
+    }
+  }
 
 }

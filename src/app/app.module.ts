@@ -15,6 +15,7 @@ import { AdminBooksComponent } from './admin.books/adminbooks.component';
 import { AdminUsersComponent } from './admin.users/admin.users.component';
 import { UpdateuserComponent } from './updateuser/updateuser.component';
 import { UpdatebookComponent } from './updatebook/updatebook.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -31,7 +32,7 @@ import { UpdatebookComponent } from './updatebook/updatebook.component';
     UpdateuserComponent,
     UpdatebookComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule, FormsModule],
+  imports: [BrowserModule, AppRoutingModule, FormsModule, ReactiveFormsModule],
   providers: [],
   bootstrap: [AppComponent],
 })
