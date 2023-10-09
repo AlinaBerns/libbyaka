@@ -17,7 +17,6 @@ export class CartService {
 }
 
   get items() {
-    this.loadCart();
     return this.cart;
   }
 
@@ -35,13 +34,16 @@ export class CartService {
   isBookInCart(book: any): boolean {
     //this.cart = JSON.parse(localStorage.getItem('cart') || '[]') as any[];
     // return this.cart.some(item => item.id === book.id);
-    this.loadCart();
     return this.cart.some(item => item.id === book.id);
   }
 
-  loadCart(): void {
-    this.cart = JSON.parse(localStorage.getItem('cart') || '[]') as any[];
+
+  removeAllBooksFromCart(){
+    this.cart = [];
+    localStorage.setItem('cart', JSON.stringify(this.cart));
   }
+
+
 
   removeSelectedBooks(selectedBooks: any[]): void {
     const selectedBookIds = selectedBooks.map(book => book.id);  // Create an array of selected book ids

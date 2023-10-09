@@ -73,8 +73,7 @@ export class HomeComponent {
       debounceTime(300),  // wait for 300ms pause in typing
       switchMap(query => {
         if (query !== null) {
-          console.log('query: ', query);
-          
+          console.log('query: ', query);         
           
           return this.bookService.searchBooks(query);
         } else {
@@ -86,7 +85,6 @@ export class HomeComponent {
         this.books = data;
         console.log('Books: ', this.books);
         
-        this.cdRef.detectChanges();  // Manually check for changes
       },
       error: error => {
         console.error('There was an error!', error);
@@ -123,8 +121,7 @@ export class HomeComponent {
   }
 
   clearCart(): void {
-    localStorage.removeItem('cart');
-    this.cartService.loadCart();
+    this.cartService.removeAllBooksFromCart();
   }
 
   bookIsInCart(book: any): boolean {  
