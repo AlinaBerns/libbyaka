@@ -1,4 +1,6 @@
 import { Injectable } from '@angular/core';
+import axios from 'axios';
+import { config } from 'rxjs';
 
 @Injectable({
   providedIn: 'root',
@@ -48,4 +50,6 @@ export class CartService {
     this.cart = this.cart.filter(item => !selectedBookIds.includes(item.id));  // Filter out the selected books by id
     localStorage.setItem('cart', JSON.stringify(this.cart));  // Update local storage
   }
+
+
 }

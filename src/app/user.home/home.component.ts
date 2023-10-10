@@ -6,6 +6,8 @@ import { FormControl } from '@angular/forms';
 import { debounceTime, switchMap } from 'rxjs/operators';
 import { ChangeDetectorRef } from '@angular/core';
 import { CartService } from '../services/cartservice/cart.service';
+import { NgModule } from '@angular/core';
+import { ReactiveFormsModule } from '@angular/forms'; // Add this line
 
 @Component({
   selector: 'app-home',
@@ -152,5 +154,8 @@ export class HomeComponent {
     
   }
 
+  reserveBooks(){
+    this.bookService.reserveBooks();
+  }
 
 }

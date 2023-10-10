@@ -91,4 +91,26 @@ export class BookService {
     }
   }
 
+  reserveBooks(): void {
+    const selectedBooks = JSON.parse(localStorage.getItem('cart') || '[]');
+    const url = 'http://localhost:8080/api/borrow/reserve';
+    const userName = this.getDecodedToken().sub;
+
+
+    selectedBooks.forEach((book: any) => {
+      const bookId = book.id;
+
+      const booksToReserve = {
+        userName: userName,
+        bookId: bookId,
+    }
+
+    console.log('booksToReserve: ', booksToReserve);
+    
+
+    axios.post(url, booksToReserve, this.getConfig())
+
+    });
+
+}
 }

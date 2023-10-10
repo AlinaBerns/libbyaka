@@ -17,6 +17,7 @@ import { UpdateuserComponent } from './updateuser/updateuser.component';
 import { UpdatebookComponent } from './updatebook/updatebook.component';
 import { ReactiveFormsModule } from '@angular/forms';
 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -31,6 +32,7 @@ import { ReactiveFormsModule } from '@angular/forms';
     AdminUsersComponent,
     UpdateuserComponent,
     UpdatebookComponent,
+
   ],
   imports: [BrowserModule, AppRoutingModule, FormsModule, ReactiveFormsModule],
   providers: [],
