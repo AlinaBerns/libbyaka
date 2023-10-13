@@ -10,16 +10,16 @@ export class BookService {
 
   constructor() {}
 
-  private getToken(): string {
+  getToken(): string {
     return localStorage.getItem('authToken') || '';
   }
 
-  private getDecodedToken(): any {
+  getDecodedToken(): any {
     const token = this.getToken();
     return jwt_decode(token);
   }
 
-  private getConfig(): any {
+  getConfig(): any {
     return {
       headers: {
         Authorization: 'Bearer ' + this.getToken(),
@@ -29,7 +29,7 @@ export class BookService {
 
   async getActiveBorrowedBooks(): Promise<any> {
 
-    const url = 'http://localhost:8080/api/borrow';
+    const url = 'http://localhost:8080/api/borrow/getall';
     
     try {
       if (!this.getToken()) {
@@ -37,13 +37,13 @@ export class BookService {
       }
 
       //Get username from decoded token ("sub" in token)
-      const username = this.getDecodedToken().sub;
+      const id = this.getDecodedToken().id;
 
-      console.log('username: ', username);
+      console.log('username: ', id);
       
 
       //Make a parameterized url
-      const parameterizedUrl = url + '?username=' + username;
+      const parameterizedUrl = url + '?id=' + id;
       
       console.log(this.getToken()); // For debugging purposes only
       console.log(this.getConfig()); // For debugging purposes only
@@ -59,7 +59,7 @@ export class BookService {
 
 
    async getAllBooks(): Promise<any> {
-    const url = 'http://localhost:8080/api/book';
+    const url = 'http://localhost:8080/api/book/getbooks';
     
     try {
       if (!this.getToken()) {

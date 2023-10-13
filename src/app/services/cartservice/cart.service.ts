@@ -1,4 +1,8 @@
 import { Injectable } from '@angular/core';
+import axios from 'axios';
+import { decode } from 'jsonwebtoken';
+import  jwt_decode from 'jwt-decode';
+import { BookService } from '../bookservice/book.service';
 
 @Injectable({
   providedIn: 'root',
@@ -7,7 +11,7 @@ export class CartService {
   private cart: any[] = [];
   private readonly maxCartSize = 5;
 
-  constructor() {
+  constructor(private bookService: BookService) {
     const storedCart = localStorage.getItem('cart');
     if (storedCart) {
       this.cart = JSON.parse(storedCart);
@@ -50,4 +54,44 @@ export class CartService {
     this.cart = this.cart.filter(item => !selectedBookIds.includes(item.id));  // Filter out the selected books by id
     localStorage.setItem('cart', JSON.stringify(this.cart));  // Update local storage
   }
+
+  reserveBooks(): void {
+
+    const config = this.bookService.getConfig();
+
+    const token = this.bookService.getDecodedToken();
+
+    const url = 'http://localhost:8080/api/borrow/reserve'
+
+    // Create a request object
+    const BorrowBookRequest = {
+      userId: token.id,
+      bookId: 0
+    };
+
+    
+    const bookIds = this.cart.map(item => item.id);  // Create an array of book ids
+
+    for (const bookId of bookIds) {
+      
+      BorrowBookRequest.bookId = bookId;
+      console.log(BorrowBookRequest);
+      axios.post(url, BorrowBookRequest, config).then(response => {
+        console.log('Book reserved: ', response.data);
+        this.removeAllBooksFromCart();
+      }).catch(error => {
+        console.log('Error reserving book: ', error);
+      });
+    }
+  }
+
+  retrieveBooksFromStoredCart(): void {
+    const storedCart = localStorage.getItem('cart');
+    if (storedCart) {
+      this.cart = JSON.parse(storedCart);
+    } else {
+      this.cart = [];
+    }
+  }
+
 }

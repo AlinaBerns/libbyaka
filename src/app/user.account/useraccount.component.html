@@ -67,28 +67,25 @@
   <div class="block2">
     <div class="text2">Change personal information</div>
     <div>
-      <input type="text" placeholder="First name" />
+      <input id="username" type="text" placeholder="username" />
     </div>
     <div>
-      <input type="text" placeholder="Last name" />
+      <input id="email" type="text" placeholder="email" />
     </div>
-    <div>
-      <input type="text" placeholder="Email" />
-    </div>
-    <button class="button3">CONFIRM</button>
+    <button (click)="changePersonalInfo()" class="button3">CONFIRM</button>
     <div class="text2">Change your password</div>
     <div>
-      <input type="password" placeholder="Enter old password" />
+      <input id="oldpassword" type="password" placeholder="Enter old password" />
     </div>
     <div>
-      <input type="password" placeholder="Enter a new password" />
+      <input id="newpassword" type="password" placeholder="Enter a new password" />
     </div>
     <div>
-      <input type="password" placeholder="Confirm your new password" />
+      <input id="confirmpassword" type="password" placeholder="Confirm your new password" />
     </div>
-    <button class="button3">CONFIRM</button>
+    <button (click)="changePassword()" class="button3">CONFIRM</button>
     <div class="text2">You can delete your profile</div>
-    <button class="button01">DELETE PROFILE</button>
+    <button (click)="deleteProfile()" class="button01">DELETE PROFILE</button>
   </div>
   <div style="margin-left: 570px;">
   <ul>

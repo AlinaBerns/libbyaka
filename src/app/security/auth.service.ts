@@ -10,8 +10,7 @@ export class AuthService {
 
   logOut(): void {
     // Clear token and role from local storage
-    localStorage.removeItem('authToken');
-    localStorage.removeItem('roles');
+    localStorage.clear();
     
     // Redirect to login page or any other page you want to redirect to after logout
     this.router.navigate(['']);

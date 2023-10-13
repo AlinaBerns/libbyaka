@@ -64,6 +64,7 @@ export class HomeComponent {
   ngOnInit(): void {
     this.getActiveBorrowedBooks();
     this.getAllBooks();
+    this.cartService.retrieveBooksFromStoredCart();
   }
 
   description: string = "Revival follows Jamie Morton from his boyhood in rural Maine (a familiar setting for King readers), through his young adult years as a drug-addicted guitarist in cover bands, to his mature years running a recording studio. Every time his life takes a dramatic turn, Charles Jacobs is there.";
@@ -147,6 +148,10 @@ export class HomeComponent {
     this.selectedBooks = [];
     console.log('Selected books after removal: ', this.selectedBooks);
     
+  }
+
+  reserveBooks(): void {
+    this.cartService.reserveBooks();
   }
 
 

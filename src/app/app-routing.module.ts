@@ -12,6 +12,7 @@ import { UpdatebookComponent } from './updatebook/updatebook.component';
 import { authGuard } from './security/auth.guard';
 
 
+
 const routes: Routes = [
   { path: '', component: LogInComponent, canActivate: [authGuard]},
   { path: 'login', component: LogInComponent, canActivate: [authGuard]},
