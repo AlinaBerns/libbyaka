@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { BookService } from '../services/bookservice/book.service';
 import { UserService } from '../services/userservice/user.service';
 import { AuthService } from '../security/auth.service';
+import { FormsModule } from '@angular/forms';
 
 @Component({
   selector: 'app-useraccount',
@@ -9,6 +10,8 @@ import { AuthService } from '../security/auth.service';
   styleUrls: ['./useraccount.component.css']
 })
 export class UserAccountComponent {
+
+  id: number = 0;
 
   constructor(private bookService: BookService, private userService: UserService, private authService: AuthService) { }
 
