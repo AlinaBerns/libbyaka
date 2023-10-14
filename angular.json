@@ -72,7 +72,8 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "libbyaka:build"
+            "browserTarget": "libbyaka:build",
+            "proxyConfig": "proxy.conf.json"
           }
         },
         "test": {

@@ -1,4 +1,13 @@
 {
+  "scripts":{
+      
+      "start": "ng serve --proxy-config proxy.conf.json",
+      "build": "ng build",
+      "test": "ng test",
+      "lint": "ng lint",
+      "e2e": "ng e2e"
+  },
+
   "devDependencies": {
     "@angular-devkit/build-angular": "^16.2.6",
     "@angular/cli": "^16.2.6",

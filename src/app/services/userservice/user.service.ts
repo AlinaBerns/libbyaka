@@ -54,7 +54,7 @@ export class UserService {
 
   deleteUser(): void {
  
-  axios.delete('http://localhost:8080/api/users/delete?id=' + this.getDecodedToken().id, this.getConfig()).then(response => response.data);
+  axios.delete('/api/users/delete?id=' + this.getDecodedToken().id, this.getConfig()).then(response => response.data);
 
   }
 }

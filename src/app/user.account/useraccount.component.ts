@@ -46,10 +46,14 @@ export class UserAccountComponent {
   }
 
   deleteProfile(){
-    
-      this.userService.deleteUser();
-      
 
+      const ok:boolean = confirm('Are you sure you want to delete your profile?');
+    
+      if(ok){
+      this.userService.deleteUser();
+      alert('Bye bye!')
+      this.authService.logOut();
+      }
   }
 
 }
